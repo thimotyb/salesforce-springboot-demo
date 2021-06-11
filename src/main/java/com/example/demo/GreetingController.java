@@ -47,7 +47,7 @@ public class GreetingController {
     	
     }
 
-	@GetMapping("/accoun")
+	@GetMapping("/account")
 	private List<AccountResult> querySample() {
 				  
 		  List<AccountResult> results = new ArrayList<>();
