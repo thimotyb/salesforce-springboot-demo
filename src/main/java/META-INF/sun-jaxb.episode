@@ -1,0 +1,2946 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Questo file è stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.3.0 
+Vedere <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Qualsiasi modifica a questo file andrà persa durante la ricompilazione dello schema di origine. 
+Generato il: 2021.06.11 alle 07:04:19 PM CEST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="urn:sobject.enterprise.soap.sforce.com">
+    <schemaBindings map="false">
+      <package name="com.example.demo"/>
+    </schemaBindings>
+    <bindings scd="~tns:sObject">
+      <class ref="com.example.demo.SObject"/>
+    </bindings>
+    <bindings scd="~tns:AggregateResult">
+      <class ref="com.example.demo.AggregateResult"/>
+    </bindings>
+    <bindings scd="~tns:AcceptedEventRelation">
+      <class ref="com.example.demo.AcceptedEventRelation"/>
+    </bindings>
+    <bindings scd="~tns:Account">
+      <class ref="com.example.demo.Account"/>
+    </bindings>
+    <bindings scd="~tns:AccountCleanInfo">
+      <class ref="com.example.demo.AccountCleanInfo"/>
+    </bindings>
+    <bindings scd="~tns:AccountContactRole">
+      <class ref="com.example.demo.AccountContactRole"/>
+    </bindings>
+    <bindings scd="~tns:AccountFeed">
+      <class ref="com.example.demo.AccountFeed"/>
+    </bindings>
+    <bindings scd="~tns:AccountHistory">
+      <class ref="com.example.demo.AccountHistory"/>
+    </bindings>
+    <bindings scd="~tns:AccountPartner">
+      <class ref="com.example.demo.AccountPartner"/>
+    </bindings>
+    <bindings scd="~tns:AccountShare">
+      <class ref="com.example.demo.AccountShare"/>
+    </bindings>
+    <bindings scd="~tns:ActionLinkGroupTemplate">
+      <class ref="com.example.demo.ActionLinkGroupTemplate"/>
+    </bindings>
+    <bindings scd="~tns:ActionLinkTemplate">
+      <class ref="com.example.demo.ActionLinkTemplate"/>
+    </bindings>
+    <bindings scd="~tns:ActivityHistory">
+      <class ref="com.example.demo.ActivityHistory"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalNumber">
+      <class ref="com.example.demo.AdditionalNumber"/>
+    </bindings>
+    <bindings scd="~tns:AlternativePaymentMethod">
+      <class ref="com.example.demo.AlternativePaymentMethod"/>
+    </bindings>
+    <bindings scd="~tns:AlternativePaymentMethodShare">
+      <class ref="com.example.demo.AlternativePaymentMethodShare"/>
+    </bindings>
+    <bindings scd="~tns:Announcement">
+      <class ref="com.example.demo.Announcement"/>
+    </bindings>
+    <bindings scd="~tns:ApexClass">
+      <class ref="com.example.demo.ApexClass"/>
+    </bindings>
+    <bindings scd="~tns:ApexComponent">
+      <class ref="com.example.demo.ApexComponent"/>
+    </bindings>
+    <bindings scd="~tns:ApexEmailNotification">
+      <class ref="com.example.demo.ApexEmailNotification"/>
+    </bindings>
+    <bindings scd="~tns:ApexLog">
+      <class ref="com.example.demo.ApexLog"/>
+    </bindings>
+    <bindings scd="~tns:ApexPage">
+      <class ref="com.example.demo.ApexPage"/>
+    </bindings>
+    <bindings scd="~tns:ApexPageInfo">
+      <class ref="com.example.demo.ApexPageInfo"/>
+    </bindings>
+    <bindings scd="~tns:ApexTestQueueItem">
+      <class ref="com.example.demo.ApexTestQueueItem"/>
+    </bindings>
+    <bindings scd="~tns:ApexTestResult">
+      <class ref="com.example.demo.ApexTestResult"/>
+    </bindings>
+    <bindings scd="~tns:ApexTestResultLimits">
+      <class ref="com.example.demo.ApexTestResultLimits"/>
+    </bindings>
+    <bindings scd="~tns:ApexTestRunResult">
+      <class ref="com.example.demo.ApexTestRunResult"/>
+    </bindings>
+    <bindings scd="~tns:ApexTestSuite">
+      <class ref="com.example.demo.ApexTestSuite"/>
+    </bindings>
+    <bindings scd="~tns:ApexTrigger">
+      <class ref="com.example.demo.ApexTrigger"/>
+    </bindings>
+    <bindings scd="~tns:ApiAnomalyEvent">
+      <class ref="com.example.demo.ApiAnomalyEvent"/>
+    </bindings>
+    <bindings scd="~tns:ApiAnomalyEventStore">
+      <class ref="com.example.demo.ApiAnomalyEventStore"/>
+    </bindings>
+    <bindings scd="~tns:ApiAnomalyEventStoreFeed">
+      <class ref="com.example.demo.ApiAnomalyEventStoreFeed"/>
+    </bindings>
+    <bindings scd="~tns:ApiEvent">
+      <class ref="com.example.demo.ApiEvent"/>
+    </bindings>
+    <bindings scd="~tns:ApiEventStream">
+      <class ref="com.example.demo.ApiEventStream"/>
+    </bindings>
+    <bindings scd="~tns:AppAnalyticsQueryRequest">
+      <class ref="com.example.demo.AppAnalyticsQueryRequest"/>
+    </bindings>
+    <bindings scd="~tns:AppDefinition">
+      <class ref="com.example.demo.AppDefinition"/>
+    </bindings>
+    <bindings scd="~tns:AppMenuItem">
+      <class ref="com.example.demo.AppMenuItem"/>
+    </bindings>
+    <bindings scd="~tns:AppTabMember">
+      <class ref="com.example.demo.AppTabMember"/>
+    </bindings>
+    <bindings scd="~tns:Asset">
+      <class ref="com.example.demo.Asset"/>
+    </bindings>
+    <bindings scd="~tns:AssetAction">
+      <class ref="com.example.demo.AssetAction"/>
+    </bindings>
+    <bindings scd="~tns:AssetActionSource">
+      <class ref="com.example.demo.AssetActionSource"/>
+    </bindings>
+    <bindings scd="~tns:AssetFeed">
+      <class ref="com.example.demo.AssetFeed"/>
+    </bindings>
+    <bindings scd="~tns:AssetHistory">
+      <class ref="com.example.demo.AssetHistory"/>
+    </bindings>
+    <bindings scd="~tns:AssetRelationship">
+      <class ref="com.example.demo.AssetRelationship"/>
+    </bindings>
+    <bindings scd="~tns:AssetRelationshipFeed">
+      <class ref="com.example.demo.AssetRelationshipFeed"/>
+    </bindings>
+    <bindings scd="~tns:AssetRelationshipHistory">
+      <class ref="com.example.demo.AssetRelationshipHistory"/>
+    </bindings>
+    <bindings scd="~tns:AssetShare">
+      <class ref="com.example.demo.AssetShare"/>
+    </bindings>
+    <bindings scd="~tns:AssetStatePeriod">
+      <class ref="com.example.demo.AssetStatePeriod"/>
+    </bindings>
+    <bindings scd="~tns:AssetTokenEvent">
+      <class ref="com.example.demo.AssetTokenEvent"/>
+    </bindings>
+    <bindings scd="~tns:AssignmentRule">
+      <class ref="com.example.demo.AssignmentRule"/>
+    </bindings>
+    <bindings scd="~tns:AsyncApexJob">
+      <class ref="com.example.demo.AsyncApexJob"/>
+    </bindings>
+    <bindings scd="~tns:AsyncOperationEvent">
+      <class ref="com.example.demo.AsyncOperationEvent"/>
+    </bindings>
+    <bindings scd="~tns:AsyncOperationStatus">
+      <class ref="com.example.demo.AsyncOperationStatus"/>
+    </bindings>
+    <bindings scd="~tns:AttachedContentDocument">
+      <class ref="com.example.demo.AttachedContentDocument"/>
+    </bindings>
+    <bindings scd="~tns:Attachment">
+      <class ref="com.example.demo.Attachment"/>
+    </bindings>
+    <bindings scd="~tns:AuraDefinition">
+      <class ref="com.example.demo.AuraDefinition"/>
+    </bindings>
+    <bindings scd="~tns:AuraDefinitionBundle">
+      <class ref="com.example.demo.AuraDefinitionBundle"/>
+    </bindings>
+    <bindings scd="~tns:AuraDefinitionBundleInfo">
+      <class ref="com.example.demo.AuraDefinitionBundleInfo"/>
+    </bindings>
+    <bindings scd="~tns:AuraDefinitionInfo">
+      <class ref="com.example.demo.AuraDefinitionInfo"/>
+    </bindings>
+    <bindings scd="~tns:AuthConfig">
+      <class ref="com.example.demo.AuthConfig"/>
+    </bindings>
+    <bindings scd="~tns:AuthConfigProviders">
+      <class ref="com.example.demo.AuthConfigProviders"/>
+    </bindings>
+    <bindings scd="~tns:AuthProvider">
+      <class ref="com.example.demo.AuthProvider"/>
+    </bindings>
+    <bindings scd="~tns:AuthSession">
+      <class ref="com.example.demo.AuthSession"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationForm">
+      <class ref="com.example.demo.AuthorizationForm"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormConsent">
+      <class ref="com.example.demo.AuthorizationFormConsent"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormConsentHistory">
+      <class ref="com.example.demo.AuthorizationFormConsentHistory"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormConsentShare">
+      <class ref="com.example.demo.AuthorizationFormConsentShare"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormDataUse">
+      <class ref="com.example.demo.AuthorizationFormDataUse"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormDataUseHistory">
+      <class ref="com.example.demo.AuthorizationFormDataUseHistory"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormDataUseShare">
+      <class ref="com.example.demo.AuthorizationFormDataUseShare"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormHistory">
+      <class ref="com.example.demo.AuthorizationFormHistory"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormShare">
+      <class ref="com.example.demo.AuthorizationFormShare"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormText">
+      <class ref="com.example.demo.AuthorizationFormText"/>
+    </bindings>
+    <bindings scd="~tns:AuthorizationFormTextHistory">
+      <class ref="com.example.demo.AuthorizationFormTextHistory"/>
+    </bindings>
+    <bindings scd="~tns:BackgroundOperation">
+      <class ref="com.example.demo.BackgroundOperation"/>
+    </bindings>
+    <bindings scd="~tns:BatchApexErrorEvent">
+      <class ref="com.example.demo.BatchApexErrorEvent"/>
+    </bindings>
+    <bindings scd="~tns:BrandTemplate">
+      <class ref="com.example.demo.BrandTemplate"/>
+    </bindings>
+    <bindings scd="~tns:BrandingSet">
+      <class ref="com.example.demo.BrandingSet"/>
+    </bindings>
+    <bindings scd="~tns:BrandingSetProperty">
+      <class ref="com.example.demo.BrandingSetProperty"/>
+    </bindings>
+    <bindings scd="~tns:BulkApiResultEvent">
+      <class ref="com.example.demo.BulkApiResultEvent"/>
+    </bindings>
+    <bindings scd="~tns:BulkApiResultEventStore">
+      <class ref="com.example.demo.BulkApiResultEventStore"/>
+    </bindings>
+    <bindings scd="~tns:BusinessHours">
+      <class ref="com.example.demo.BusinessHours"/>
+    </bindings>
+    <bindings scd="~tns:BusinessProcess">
+      <class ref="com.example.demo.BusinessProcess"/>
+    </bindings>
+    <bindings scd="~tns:Calendar">
+      <class ref="com.example.demo.Calendar"/>
+    </bindings>
+    <bindings scd="~tns:CalendarView">
+      <class ref="com.example.demo.CalendarView"/>
+    </bindings>
+    <bindings scd="~tns:CalendarViewShare">
+      <class ref="com.example.demo.CalendarViewShare"/>
+    </bindings>
+    <bindings scd="~tns:CallCenter">
+      <class ref="com.example.demo.CallCenter"/>
+    </bindings>
+    <bindings scd="~tns:CallCoachingMediaProvider">
+      <class ref="com.example.demo.CallCoachingMediaProvider"/>
+    </bindings>
+    <bindings scd="~tns:Campaign">
+      <class ref="com.example.demo.Campaign"/>
+    </bindings>
+    <bindings scd="~tns:CampaignFeed">
+      <class ref="com.example.demo.CampaignFeed"/>
+    </bindings>
+    <bindings scd="~tns:CampaignHistory">
+      <class ref="com.example.demo.CampaignHistory"/>
+    </bindings>
+    <bindings scd="~tns:CampaignMember">
+      <class ref="com.example.demo.CampaignMember"/>
+    </bindings>
+    <bindings scd="~tns:CampaignMemberStatus">
+      <class ref="com.example.demo.CampaignMemberStatus"/>
+    </bindings>
+    <bindings scd="~tns:CampaignShare">
+      <class ref="com.example.demo.CampaignShare"/>
+    </bindings>
+    <bindings scd="~tns:CardPaymentMethod">
+      <class ref="com.example.demo.CardPaymentMethod"/>
+    </bindings>
+    <bindings scd="~tns:Case">
+      <class ref="com.example.demo.Case"/>
+    </bindings>
+    <bindings scd="~tns:CaseComment">
+      <class ref="com.example.demo.CaseComment"/>
+    </bindings>
+    <bindings scd="~tns:CaseContactRole">
+      <class ref="com.example.demo.CaseContactRole"/>
+    </bindings>
+    <bindings scd="~tns:CaseFeed">
+      <class ref="com.example.demo.CaseFeed"/>
+    </bindings>
+    <bindings scd="~tns:CaseHistory">
+      <class ref="com.example.demo.CaseHistory"/>
+    </bindings>
+    <bindings scd="~tns:CaseShare">
+      <class ref="com.example.demo.CaseShare"/>
+    </bindings>
+    <bindings scd="~tns:CaseSolution">
+      <class ref="com.example.demo.CaseSolution"/>
+    </bindings>
+    <bindings scd="~tns:CaseStatus">
+      <class ref="com.example.demo.CaseStatus"/>
+    </bindings>
+    <bindings scd="~tns:CaseTeamMember">
+      <class ref="com.example.demo.CaseTeamMember"/>
+    </bindings>
+    <bindings scd="~tns:CaseTeamRole">
+      <class ref="com.example.demo.CaseTeamRole"/>
+    </bindings>
+    <bindings scd="~tns:CaseTeamTemplate">
+      <class ref="com.example.demo.CaseTeamTemplate"/>
+    </bindings>
+    <bindings scd="~tns:CaseTeamTemplateMember">
+      <class ref="com.example.demo.CaseTeamTemplateMember"/>
+    </bindings>
+    <bindings scd="~tns:CaseTeamTemplateRecord">
+      <class ref="com.example.demo.CaseTeamTemplateRecord"/>
+    </bindings>
+    <bindings scd="~tns:CategoryData">
+      <class ref="com.example.demo.CategoryData"/>
+    </bindings>
+    <bindings scd="~tns:CategoryNode">
+      <class ref="com.example.demo.CategoryNode"/>
+    </bindings>
+    <bindings scd="~tns:ChatterActivity">
+      <class ref="com.example.demo.ChatterActivity"/>
+    </bindings>
+    <bindings scd="~tns:ChatterExtension">
+      <class ref="com.example.demo.ChatterExtension"/>
+    </bindings>
+    <bindings scd="~tns:ChatterExtensionConfig">
+      <class ref="com.example.demo.ChatterExtensionConfig"/>
+    </bindings>
+    <bindings scd="~tns:ClientBrowser">
+      <class ref="com.example.demo.ClientBrowser"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationGroup">
+      <class ref="com.example.demo.CollaborationGroup"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationGroupFeed">
+      <class ref="com.example.demo.CollaborationGroupFeed"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationGroupMember">
+      <class ref="com.example.demo.CollaborationGroupMember"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationGroupMemberRequest">
+      <class ref="com.example.demo.CollaborationGroupMemberRequest"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationGroupRecord">
+      <class ref="com.example.demo.CollaborationGroupRecord"/>
+    </bindings>
+    <bindings scd="~tns:CollaborationInvitation">
+      <class ref="com.example.demo.CollaborationInvitation"/>
+    </bindings>
+    <bindings scd="~tns:ColorDefinition">
+      <class ref="com.example.demo.ColorDefinition"/>
+    </bindings>
+    <bindings scd="~tns:CombinedAttachment">
+      <class ref="com.example.demo.CombinedAttachment"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscription">
+      <class ref="com.example.demo.CommSubscription"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionChannelType">
+      <class ref="com.example.demo.CommSubscriptionChannelType"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionChannelTypeFeed">
+      <class ref="com.example.demo.CommSubscriptionChannelTypeFeed"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionChannelTypeHistory">
+      <class ref="com.example.demo.CommSubscriptionChannelTypeHistory"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionChannelTypeShare">
+      <class ref="com.example.demo.CommSubscriptionChannelTypeShare"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionConsent">
+      <class ref="com.example.demo.CommSubscriptionConsent"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionConsentFeed">
+      <class ref="com.example.demo.CommSubscriptionConsentFeed"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionConsentHistory">
+      <class ref="com.example.demo.CommSubscriptionConsentHistory"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionConsentShare">
+      <class ref="com.example.demo.CommSubscriptionConsentShare"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionFeed">
+      <class ref="com.example.demo.CommSubscriptionFeed"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionHistory">
+      <class ref="com.example.demo.CommSubscriptionHistory"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionShare">
+      <class ref="com.example.demo.CommSubscriptionShare"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionTiming">
+      <class ref="com.example.demo.CommSubscriptionTiming"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionTimingFeed">
+      <class ref="com.example.demo.CommSubscriptionTimingFeed"/>
+    </bindings>
+    <bindings scd="~tns:CommSubscriptionTimingHistory">
+      <class ref="com.example.demo.CommSubscriptionTimingHistory"/>
+    </bindings>
+    <bindings scd="~tns:Community">
+      <class ref="com.example.demo.Community"/>
+    </bindings>
+    <bindings scd="~tns:ConcurLongRunApexErrEvent">
+      <class ref="com.example.demo.ConcurLongRunApexErrEvent"/>
+    </bindings>
+    <bindings scd="~tns:ConferenceNumber">
+      <class ref="com.example.demo.ConferenceNumber"/>
+    </bindings>
+    <bindings scd="~tns:ConnectedApplication">
+      <class ref="com.example.demo.ConnectedApplication"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionRate">
+      <class ref="com.example.demo.ConsumptionRate"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionRateHistory">
+      <class ref="com.example.demo.ConsumptionRateHistory"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionSchedule">
+      <class ref="com.example.demo.ConsumptionSchedule"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionScheduleFeed">
+      <class ref="com.example.demo.ConsumptionScheduleFeed"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionScheduleHistory">
+      <class ref="com.example.demo.ConsumptionScheduleHistory"/>
+    </bindings>
+    <bindings scd="~tns:ConsumptionScheduleShare">
+      <class ref="com.example.demo.ConsumptionScheduleShare"/>
+    </bindings>
+    <bindings scd="~tns:Contact">
+      <class ref="com.example.demo.Contact"/>
+    </bindings>
+    <bindings scd="~tns:ContactCleanInfo">
+      <class ref="com.example.demo.ContactCleanInfo"/>
+    </bindings>
+    <bindings scd="~tns:ContactFeed">
+      <class ref="com.example.demo.ContactFeed"/>
+    </bindings>
+    <bindings scd="~tns:ContactHistory">
+      <class ref="com.example.demo.ContactHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointAddress">
+      <class ref="com.example.demo.ContactPointAddress"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointAddressHistory">
+      <class ref="com.example.demo.ContactPointAddressHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointAddressShare">
+      <class ref="com.example.demo.ContactPointAddressShare"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointConsent">
+      <class ref="com.example.demo.ContactPointConsent"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointConsentHistory">
+      <class ref="com.example.demo.ContactPointConsentHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointConsentShare">
+      <class ref="com.example.demo.ContactPointConsentShare"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointEmail">
+      <class ref="com.example.demo.ContactPointEmail"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointEmailHistory">
+      <class ref="com.example.demo.ContactPointEmailHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointEmailShare">
+      <class ref="com.example.demo.ContactPointEmailShare"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointPhone">
+      <class ref="com.example.demo.ContactPointPhone"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointPhoneHistory">
+      <class ref="com.example.demo.ContactPointPhoneHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointPhoneShare">
+      <class ref="com.example.demo.ContactPointPhoneShare"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointTypeConsent">
+      <class ref="com.example.demo.ContactPointTypeConsent"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointTypeConsentHistory">
+      <class ref="com.example.demo.ContactPointTypeConsentHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContactPointTypeConsentShare">
+      <class ref="com.example.demo.ContactPointTypeConsentShare"/>
+    </bindings>
+    <bindings scd="~tns:ContactRequest">
+      <class ref="com.example.demo.ContactRequest"/>
+    </bindings>
+    <bindings scd="~tns:ContactRequestShare">
+      <class ref="com.example.demo.ContactRequestShare"/>
+    </bindings>
+    <bindings scd="~tns:ContactShare">
+      <class ref="com.example.demo.ContactShare"/>
+    </bindings>
+    <bindings scd="~tns:ContentAsset">
+      <class ref="com.example.demo.ContentAsset"/>
+    </bindings>
+    <bindings scd="~tns:ContentBody">
+      <class ref="com.example.demo.ContentBody"/>
+    </bindings>
+    <bindings scd="~tns:ContentDistribution">
+      <class ref="com.example.demo.ContentDistribution"/>
+    </bindings>
+    <bindings scd="~tns:ContentDistributionView">
+      <class ref="com.example.demo.ContentDistributionView"/>
+    </bindings>
+    <bindings scd="~tns:ContentDocument">
+      <class ref="com.example.demo.ContentDocument"/>
+    </bindings>
+    <bindings scd="~tns:ContentDocumentFeed">
+      <class ref="com.example.demo.ContentDocumentFeed"/>
+    </bindings>
+    <bindings scd="~tns:ContentDocumentHistory">
+      <class ref="com.example.demo.ContentDocumentHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContentDocumentLink">
+      <class ref="com.example.demo.ContentDocumentLink"/>
+    </bindings>
+    <bindings scd="~tns:ContentDocumentSubscription">
+      <class ref="com.example.demo.ContentDocumentSubscription"/>
+    </bindings>
+    <bindings scd="~tns:ContentFolder">
+      <class ref="com.example.demo.ContentFolder"/>
+    </bindings>
+    <bindings scd="~tns:ContentFolderItem">
+      <class ref="com.example.demo.ContentFolderItem"/>
+    </bindings>
+    <bindings scd="~tns:ContentFolderLink">
+      <class ref="com.example.demo.ContentFolderLink"/>
+    </bindings>
+    <bindings scd="~tns:ContentFolderMember">
+      <class ref="com.example.demo.ContentFolderMember"/>
+    </bindings>
+    <bindings scd="~tns:ContentNotification">
+      <class ref="com.example.demo.ContentNotification"/>
+    </bindings>
+    <bindings scd="~tns:ContentTagSubscription">
+      <class ref="com.example.demo.ContentTagSubscription"/>
+    </bindings>
+    <bindings scd="~tns:ContentUserSubscription">
+      <class ref="com.example.demo.ContentUserSubscription"/>
+    </bindings>
+    <bindings scd="~tns:ContentVersion">
+      <class ref="com.example.demo.ContentVersion"/>
+    </bindings>
+    <bindings scd="~tns:ContentVersionComment">
+      <class ref="com.example.demo.ContentVersionComment"/>
+    </bindings>
+    <bindings scd="~tns:ContentVersionHistory">
+      <class ref="com.example.demo.ContentVersionHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContentVersionRating">
+      <class ref="com.example.demo.ContentVersionRating"/>
+    </bindings>
+    <bindings scd="~tns:ContentWorkspace">
+      <class ref="com.example.demo.ContentWorkspace"/>
+    </bindings>
+    <bindings scd="~tns:ContentWorkspaceDoc">
+      <class ref="com.example.demo.ContentWorkspaceDoc"/>
+    </bindings>
+    <bindings scd="~tns:ContentWorkspaceMember">
+      <class ref="com.example.demo.ContentWorkspaceMember"/>
+    </bindings>
+    <bindings scd="~tns:ContentWorkspacePermission">
+      <class ref="com.example.demo.ContentWorkspacePermission"/>
+    </bindings>
+    <bindings scd="~tns:ContentWorkspaceSubscription">
+      <class ref="com.example.demo.ContentWorkspaceSubscription"/>
+    </bindings>
+    <bindings scd="~tns:Contract">
+      <class ref="com.example.demo.Contract"/>
+    </bindings>
+    <bindings scd="~tns:ContractContactRole">
+      <class ref="com.example.demo.ContractContactRole"/>
+    </bindings>
+    <bindings scd="~tns:ContractFeed">
+      <class ref="com.example.demo.ContractFeed"/>
+    </bindings>
+    <bindings scd="~tns:ContractHistory">
+      <class ref="com.example.demo.ContractHistory"/>
+    </bindings>
+    <bindings scd="~tns:ContractStatus">
+      <class ref="com.example.demo.ContractStatus"/>
+    </bindings>
+    <bindings scd="~tns:ConversationEntry">
+      <class ref="com.example.demo.ConversationEntry"/>
+    </bindings>
+    <bindings scd="~tns:CorsWhitelistEntry">
+      <class ref="com.example.demo.CorsWhitelistEntry"/>
+    </bindings>
+    <bindings scd="~tns:CredentialStuffingEvent">
+      <class ref="com.example.demo.CredentialStuffingEvent"/>
+    </bindings>
+    <bindings scd="~tns:CredentialStuffingEventStore">
+      <class ref="com.example.demo.CredentialStuffingEventStore"/>
+    </bindings>
+    <bindings scd="~tns:CredentialStuffingEventStoreFeed">
+      <class ref="com.example.demo.CredentialStuffingEventStoreFeed"/>
+    </bindings>
+    <bindings scd="~tns:CronJobDetail">
+      <class ref="com.example.demo.CronJobDetail"/>
+    </bindings>
+    <bindings scd="~tns:CronTrigger">
+      <class ref="com.example.demo.CronTrigger"/>
+    </bindings>
+    <bindings scd="~tns:CspTrustedSite">
+      <class ref="com.example.demo.CspTrustedSite"/>
+    </bindings>
+    <bindings scd="~tns:CustomBrand">
+      <class ref="com.example.demo.CustomBrand"/>
+    </bindings>
+    <bindings scd="~tns:CustomBrandAsset">
+      <class ref="com.example.demo.CustomBrandAsset"/>
+    </bindings>
+    <bindings scd="~tns:CustomHelpMenuItem">
+      <class ref="com.example.demo.CustomHelpMenuItem"/>
+    </bindings>
+    <bindings scd="~tns:CustomHelpMenuSection">
+      <class ref="com.example.demo.CustomHelpMenuSection"/>
+    </bindings>
+    <bindings scd="~tns:CustomHttpHeader">
+      <class ref="com.example.demo.CustomHttpHeader"/>
+    </bindings>
+    <bindings scd="~tns:CustomNotificationType">
+      <class ref="com.example.demo.CustomNotificationType"/>
+    </bindings>
+    <bindings scd="~tns:CustomObjectUserLicenseMetrics">
+      <class ref="com.example.demo.CustomObjectUserLicenseMetrics"/>
+    </bindings>
+    <bindings scd="~tns:CustomPermission">
+      <class ref="com.example.demo.CustomPermission"/>
+    </bindings>
+    <bindings scd="~tns:CustomPermissionDependency">
+      <class ref="com.example.demo.CustomPermissionDependency"/>
+    </bindings>
+    <bindings scd="~tns:DandBCompany">
+      <class ref="com.example.demo.DandBCompany"/>
+    </bindings>
+    <bindings scd="~tns:Dashboard">
+      <class ref="com.example.demo.Dashboard"/>
+    </bindings>
+    <bindings scd="~tns:DashboardComponent">
+      <class ref="com.example.demo.DashboardComponent"/>
+    </bindings>
+    <bindings scd="~tns:DashboardComponentFeed">
+      <class ref="com.example.demo.DashboardComponentFeed"/>
+    </bindings>
+    <bindings scd="~tns:DashboardFeed">
+      <class ref="com.example.demo.DashboardFeed"/>
+    </bindings>
+    <bindings scd="~tns:DataAssessmentFieldMetric">
+      <class ref="com.example.demo.DataAssessmentFieldMetric"/>
+    </bindings>
+    <bindings scd="~tns:DataAssessmentMetric">
+      <class ref="com.example.demo.DataAssessmentMetric"/>
+    </bindings>
+    <bindings scd="~tns:DataAssessmentValueMetric">
+      <class ref="com.example.demo.DataAssessmentValueMetric"/>
+    </bindings>
+    <bindings scd="~tns:DataStatistics">
+      <class ref="com.example.demo.DataStatistics"/>
+    </bindings>
+    <bindings scd="~tns:DataType">
+      <class ref="com.example.demo.DataType"/>
+    </bindings>
+    <bindings scd="~tns:DataUseLegalBasis">
+      <class ref="com.example.demo.DataUseLegalBasis"/>
+    </bindings>
+    <bindings scd="~tns:DataUseLegalBasisHistory">
+      <class ref="com.example.demo.DataUseLegalBasisHistory"/>
+    </bindings>
+    <bindings scd="~tns:DataUseLegalBasisShare">
+      <class ref="com.example.demo.DataUseLegalBasisShare"/>
+    </bindings>
+    <bindings scd="~tns:DataUsePurpose">
+      <class ref="com.example.demo.DataUsePurpose"/>
+    </bindings>
+    <bindings scd="~tns:DataUsePurposeHistory">
+      <class ref="com.example.demo.DataUsePurposeHistory"/>
+    </bindings>
+    <bindings scd="~tns:DataUsePurposeShare">
+      <class ref="com.example.demo.DataUsePurposeShare"/>
+    </bindings>
+    <bindings scd="~tns:DatacloudAddress">
+      <class ref="com.example.demo.DatacloudAddress"/>
+    </bindings>
+    <bindings scd="~tns:DatacloudCompany">
+      <class ref="com.example.demo.DatacloudCompany"/>
+    </bindings>
+    <bindings scd="~tns:DatacloudContact">
+      <class ref="com.example.demo.DatacloudContact"/>
+    </bindings>
+    <bindings scd="~tns:DatacloudDandBCompany">
+      <class ref="com.example.demo.DatacloudDandBCompany"/>
+    </bindings>
+    <bindings scd="~tns:DatacloudOwnedEntity">
+      <class ref="com.example.demo.DatacloudOwnedEntity"/>
+    </bindings>
+    <bindings scd="~tns:DatacloudPurchaseUsage">
+      <class ref="com.example.demo.DatacloudPurchaseUsage"/>
+    </bindings>
+    <bindings scd="~tns:DeclinedEventRelation">
+      <class ref="com.example.demo.DeclinedEventRelation"/>
+    </bindings>
+    <bindings scd="~tns:DeleteEvent">
+      <class ref="com.example.demo.DeleteEvent"/>
+    </bindings>
+    <bindings scd="~tns:DigitalWallet">
+      <class ref="com.example.demo.DigitalWallet"/>
+    </bindings>
+    <bindings scd="~tns:Document">
+      <class ref="com.example.demo.Document"/>
+    </bindings>
+    <bindings scd="~tns:DocumentAttachmentMap">
+      <class ref="com.example.demo.DocumentAttachmentMap"/>
+    </bindings>
+    <bindings scd="~tns:Domain">
+      <class ref="com.example.demo.Domain"/>
+    </bindings>
+    <bindings scd="~tns:DomainSite">
+      <class ref="com.example.demo.DomainSite"/>
+    </bindings>
+    <bindings scd="~tns:DuplicateRecordItem">
+      <class ref="com.example.demo.DuplicateRecordItem"/>
+    </bindings>
+    <bindings scd="~tns:DuplicateRecordSet">
+      <class ref="com.example.demo.DuplicateRecordSet"/>
+    </bindings>
+    <bindings scd="~tns:DuplicateRule">
+      <class ref="com.example.demo.DuplicateRule"/>
+    </bindings>
+    <bindings scd="~tns:EmailCapture">
+      <class ref="com.example.demo.EmailCapture"/>
+    </bindings>
+    <bindings scd="~tns:EmailDomainFilter">
+      <class ref="com.example.demo.EmailDomainFilter"/>
+    </bindings>
+    <bindings scd="~tns:EmailDomainKey">
+      <class ref="com.example.demo.EmailDomainKey"/>
+    </bindings>
+    <bindings scd="~tns:EmailMessage">
+      <class ref="com.example.demo.EmailMessage"/>
+    </bindings>
+    <bindings scd="~tns:EmailMessageRelation">
+      <class ref="com.example.demo.EmailMessageRelation"/>
+    </bindings>
+    <bindings scd="~tns:EmailRelay">
+      <class ref="com.example.demo.EmailRelay"/>
+    </bindings>
+    <bindings scd="~tns:EmailServicesAddress">
+      <class ref="com.example.demo.EmailServicesAddress"/>
+    </bindings>
+    <bindings scd="~tns:EmailServicesFunction">
+      <class ref="com.example.demo.EmailServicesFunction"/>
+    </bindings>
+    <bindings scd="~tns:EmailStatus">
+      <class ref="com.example.demo.EmailStatus"/>
+    </bindings>
+    <bindings scd="~tns:EmailTemplate">
+      <class ref="com.example.demo.EmailTemplate"/>
+    </bindings>
+    <bindings scd="~tns:EmbeddedServiceDetail">
+      <class ref="com.example.demo.EmbeddedServiceDetail"/>
+    </bindings>
+    <bindings scd="~tns:EmbeddedServiceLabel">
+      <class ref="com.example.demo.EmbeddedServiceLabel"/>
+    </bindings>
+    <bindings scd="~tns:EngagementChannelType">
+      <class ref="com.example.demo.EngagementChannelType"/>
+    </bindings>
+    <bindings scd="~tns:EngagementChannelTypeFeed">
+      <class ref="com.example.demo.EngagementChannelTypeFeed"/>
+    </bindings>
+    <bindings scd="~tns:EngagementChannelTypeHistory">
+      <class ref="com.example.demo.EngagementChannelTypeHistory"/>
+    </bindings>
+    <bindings scd="~tns:EngagementChannelTypeShare">
+      <class ref="com.example.demo.EngagementChannelTypeShare"/>
+    </bindings>
+    <bindings scd="~tns:EnhancedLetterhead">
+      <class ref="com.example.demo.EnhancedLetterhead"/>
+    </bindings>
+    <bindings scd="~tns:EnhancedLetterheadFeed">
+      <class ref="com.example.demo.EnhancedLetterheadFeed"/>
+    </bindings>
+    <bindings scd="~tns:EntityDefinition">
+      <class ref="com.example.demo.EntityDefinition"/>
+    </bindings>
+    <bindings scd="~tns:EntityParticle">
+      <class ref="com.example.demo.EntityParticle"/>
+    </bindings>
+    <bindings scd="~tns:EntitySubscription">
+      <class ref="com.example.demo.EntitySubscription"/>
+    </bindings>
+    <bindings scd="~tns:Event">
+      <class ref="com.example.demo.Event"/>
+    </bindings>
+    <bindings scd="~tns:EventBusSubscriber">
+      <class ref="com.example.demo.EventBusSubscriber"/>
+    </bindings>
+    <bindings scd="~tns:EventFeed">
+      <class ref="com.example.demo.EventFeed"/>
+    </bindings>
+    <bindings scd="~tns:EventLogFile">
+      <class ref="com.example.demo.EventLogFile"/>
+    </bindings>
+    <bindings scd="~tns:EventRelation">
+      <class ref="com.example.demo.EventRelation"/>
+    </bindings>
+    <bindings scd="~tns:ExpressionFilter">
+      <class ref="com.example.demo.ExpressionFilter"/>
+    </bindings>
+    <bindings scd="~tns:ExpressionFilterCriteria">
+      <class ref="com.example.demo.ExpressionFilterCriteria"/>
+    </bindings>
+    <bindings scd="~tns:ExternalDataSource">
+      <class ref="com.example.demo.ExternalDataSource"/>
+    </bindings>
+    <bindings scd="~tns:ExternalDataUserAuth">
+      <class ref="com.example.demo.ExternalDataUserAuth"/>
+    </bindings>
+    <bindings scd="~tns:ExternalEvent">
+      <class ref="com.example.demo.ExternalEvent"/>
+    </bindings>
+    <bindings scd="~tns:ExternalEventMapping">
+      <class ref="com.example.demo.ExternalEventMapping"/>
+    </bindings>
+    <bindings scd="~tns:ExternalEventMappingShare">
+      <class ref="com.example.demo.ExternalEventMappingShare"/>
+    </bindings>
+    <bindings scd="~tns:FeedAttachment">
+      <class ref="com.example.demo.FeedAttachment"/>
+    </bindings>
+    <bindings scd="~tns:FeedComment">
+      <class ref="com.example.demo.FeedComment"/>
+    </bindings>
+    <bindings scd="~tns:FeedItem">
+      <class ref="com.example.demo.FeedItem"/>
+    </bindings>
+    <bindings scd="~tns:FeedLike">
+      <class ref="com.example.demo.FeedLike"/>
+    </bindings>
+    <bindings scd="~tns:FeedPollChoice">
+      <class ref="com.example.demo.FeedPollChoice"/>
+    </bindings>
+    <bindings scd="~tns:FeedPollVote">
+      <class ref="com.example.demo.FeedPollVote"/>
+    </bindings>
+    <bindings scd="~tns:FeedRevision">
+      <class ref="com.example.demo.FeedRevision"/>
+    </bindings>
+    <bindings scd="~tns:FeedSignal">
+      <class ref="com.example.demo.FeedSignal"/>
+    </bindings>
+    <bindings scd="~tns:FeedTrackedChange">
+      <class ref="com.example.demo.FeedTrackedChange"/>
+    </bindings>
+    <bindings scd="~tns:FieldDefinition">
+      <class ref="com.example.demo.FieldDefinition"/>
+    </bindings>
+    <bindings scd="~tns:FieldPermissions">
+      <class ref="com.example.demo.FieldPermissions"/>
+    </bindings>
+    <bindings scd="~tns:FieldSecurityClassification">
+      <class ref="com.example.demo.FieldSecurityClassification"/>
+    </bindings>
+    <bindings scd="~tns:FileSearchActivity">
+      <class ref="com.example.demo.FileSearchActivity"/>
+    </bindings>
+    <bindings scd="~tns:FinanceBalanceSnapshot">
+      <class ref="com.example.demo.FinanceBalanceSnapshot"/>
+    </bindings>
+    <bindings scd="~tns:FinanceBalanceSnapshotShare">
+      <class ref="com.example.demo.FinanceBalanceSnapshotShare"/>
+    </bindings>
+    <bindings scd="~tns:FinanceTransaction">
+      <class ref="com.example.demo.FinanceTransaction"/>
+    </bindings>
+    <bindings scd="~tns:FinanceTransactionShare">
+      <class ref="com.example.demo.FinanceTransactionShare"/>
+    </bindings>
+    <bindings scd="~tns:FiscalYearSettings">
+      <class ref="com.example.demo.FiscalYearSettings"/>
+    </bindings>
+    <bindings scd="~tns:FlexQueueItem">
+      <class ref="com.example.demo.FlexQueueItem"/>
+    </bindings>
+    <bindings scd="~tns:FlowDefinitionView">
+      <class ref="com.example.demo.FlowDefinitionView"/>
+    </bindings>
+    <bindings scd="~tns:FlowExecutionErrorEvent">
+      <class ref="com.example.demo.FlowExecutionErrorEvent"/>
+    </bindings>
+    <bindings scd="~tns:FlowInterview">
+      <class ref="com.example.demo.FlowInterview"/>
+    </bindings>
+    <bindings scd="~tns:FlowInterviewLog">
+      <class ref="com.example.demo.FlowInterviewLog"/>
+    </bindings>
+    <bindings scd="~tns:FlowInterviewLogEntry">
+      <class ref="com.example.demo.FlowInterviewLogEntry"/>
+    </bindings>
+    <bindings scd="~tns:FlowInterviewLogShare">
+      <class ref="com.example.demo.FlowInterviewLogShare"/>
+    </bindings>
+    <bindings scd="~tns:FlowInterviewShare">
+      <class ref="com.example.demo.FlowInterviewShare"/>
+    </bindings>
+    <bindings scd="~tns:FlowRecordRelation">
+      <class ref="com.example.demo.FlowRecordRelation"/>
+    </bindings>
+    <bindings scd="~tns:FlowStageRelation">
+      <class ref="com.example.demo.FlowStageRelation"/>
+    </bindings>
+    <bindings scd="~tns:FlowVariableView">
+      <class ref="com.example.demo.FlowVariableView"/>
+    </bindings>
+    <bindings scd="~tns:FlowVersionView">
+      <class ref="com.example.demo.FlowVersionView"/>
+    </bindings>
+    <bindings scd="~tns:Folder">
+      <class ref="com.example.demo.Folder"/>
+    </bindings>
+    <bindings scd="~tns:FolderedContentDocument">
+      <class ref="com.example.demo.FolderedContentDocument"/>
+    </bindings>
+    <bindings scd="~tns:FormulaFunction">
+      <class ref="com.example.demo.FormulaFunction"/>
+    </bindings>
+    <bindings scd="~tns:FormulaFunctionAllowedType">
+      <class ref="com.example.demo.FormulaFunctionAllowedType"/>
+    </bindings>
+    <bindings scd="~tns:FormulaFunctionCategory">
+      <class ref="com.example.demo.FormulaFunctionCategory"/>
+    </bindings>
+    <bindings scd="~tns:GrantedByLicense">
+      <class ref="com.example.demo.GrantedByLicense"/>
+    </bindings>
+    <bindings scd="~tns:Group">
+      <class ref="com.example.demo.Group"/>
+    </bindings>
+    <bindings scd="~tns:GroupMember">
+      <class ref="com.example.demo.GroupMember"/>
+    </bindings>
+    <bindings scd="~tns:GtwyProvPaymentMethodType">
+      <class ref="com.example.demo.GtwyProvPaymentMethodType"/>
+    </bindings>
+    <bindings scd="~tns:Holiday">
+      <class ref="com.example.demo.Holiday"/>
+    </bindings>
+    <bindings scd="~tns:IconDefinition">
+      <class ref="com.example.demo.IconDefinition"/>
+    </bindings>
+    <bindings scd="~tns:Idea">
+      <class ref="com.example.demo.Idea"/>
+    </bindings>
+    <bindings scd="~tns:IdeaComment">
+      <class ref="com.example.demo.IdeaComment"/>
+    </bindings>
+    <bindings scd="~tns:IdentityProviderEventStore">
+      <class ref="com.example.demo.IdentityProviderEventStore"/>
+    </bindings>
+    <bindings scd="~tns:IdentityVerificationEvent">
+      <class ref="com.example.demo.IdentityVerificationEvent"/>
+    </bindings>
+    <bindings scd="~tns:IdpEventLog">
+      <class ref="com.example.demo.IdpEventLog"/>
+    </bindings>
+    <bindings scd="~tns:IframeWhiteListUrl">
+      <class ref="com.example.demo.IframeWhiteListUrl"/>
+    </bindings>
+    <bindings scd="~tns:Image">
+      <class ref="com.example.demo.Image"/>
+    </bindings>
+    <bindings scd="~tns:ImageFeed">
+      <class ref="com.example.demo.ImageFeed"/>
+    </bindings>
+    <bindings scd="~tns:ImageHistory">
+      <class ref="com.example.demo.ImageHistory"/>
+    </bindings>
+    <bindings scd="~tns:ImageShare">
+      <class ref="com.example.demo.ImageShare"/>
+    </bindings>
+    <bindings scd="~tns:Individual">
+      <class ref="com.example.demo.Individual"/>
+    </bindings>
+    <bindings scd="~tns:IndividualHistory">
+      <class ref="com.example.demo.IndividualHistory"/>
+    </bindings>
+    <bindings scd="~tns:IndividualShare">
+      <class ref="com.example.demo.IndividualShare"/>
+    </bindings>
+    <bindings scd="~tns:InstalledMobileApp">
+      <class ref="com.example.demo.InstalledMobileApp"/>
+    </bindings>
+    <bindings scd="~tns:KnowledgeableUser">
+      <class ref="com.example.demo.KnowledgeableUser"/>
+    </bindings>
+    <bindings scd="~tns:Lead">
+      <class ref="com.example.demo.Lead"/>
+    </bindings>
+    <bindings scd="~tns:LeadCleanInfo">
+      <class ref="com.example.demo.LeadCleanInfo"/>
+    </bindings>
+    <bindings scd="~tns:LeadFeed">
+      <class ref="com.example.demo.LeadFeed"/>
+    </bindings>
+    <bindings scd="~tns:LeadHistory">
+      <class ref="com.example.demo.LeadHistory"/>
+    </bindings>
+    <bindings scd="~tns:LeadShare">
+      <class ref="com.example.demo.LeadShare"/>
+    </bindings>
+    <bindings scd="~tns:LeadStatus">
+      <class ref="com.example.demo.LeadStatus"/>
+    </bindings>
+    <bindings scd="~tns:LegalEntity">
+      <class ref="com.example.demo.LegalEntity"/>
+    </bindings>
+    <bindings scd="~tns:LegalEntityFeed">
+      <class ref="com.example.demo.LegalEntityFeed"/>
+    </bindings>
+    <bindings scd="~tns:LegalEntityHistory">
+      <class ref="com.example.demo.LegalEntityHistory"/>
+    </bindings>
+    <bindings scd="~tns:LegalEntityShare">
+      <class ref="com.example.demo.LegalEntityShare"/>
+    </bindings>
+    <bindings scd="~tns:LightningExitByPageMetrics">
+      <class ref="com.example.demo.LightningExitByPageMetrics"/>
+    </bindings>
+    <bindings scd="~tns:LightningExperienceTheme">
+      <class ref="com.example.demo.LightningExperienceTheme"/>
+    </bindings>
+    <bindings scd="~tns:LightningOnboardingConfig">
+      <class ref="com.example.demo.LightningOnboardingConfig"/>
+    </bindings>
+    <bindings scd="~tns:LightningToggleMetrics">
+      <class ref="com.example.demo.LightningToggleMetrics"/>
+    </bindings>
+    <bindings scd="~tns:LightningUriEvent">
+      <class ref="com.example.demo.LightningUriEvent"/>
+    </bindings>
+    <bindings scd="~tns:LightningUriEventStream">
+      <class ref="com.example.demo.LightningUriEventStream"/>
+    </bindings>
+    <bindings scd="~tns:LightningUsageByAppTypeMetrics">
+      <class ref="com.example.demo.LightningUsageByAppTypeMetrics"/>
+    </bindings>
+    <bindings scd="~tns:LightningUsageByBrowserMetrics">
+      <class ref="com.example.demo.LightningUsageByBrowserMetrics"/>
+    </bindings>
+    <bindings scd="~tns:LightningUsageByFlexiPageMetrics">
+      <class ref="com.example.demo.LightningUsageByFlexiPageMetrics"/>
+    </bindings>
+    <bindings scd="~tns:LightningUsageByPageMetrics">
+      <class ref="com.example.demo.LightningUsageByPageMetrics"/>
+    </bindings>
+    <bindings scd="~tns:ListEmail">
+      <class ref="com.example.demo.ListEmail"/>
+    </bindings>
+    <bindings scd="~tns:ListEmailIndividualRecipient">
+      <class ref="com.example.demo.ListEmailIndividualRecipient"/>
+    </bindings>
+    <bindings scd="~tns:ListEmailRecipientSource">
+      <class ref="com.example.demo.ListEmailRecipientSource"/>
+    </bindings>
+    <bindings scd="~tns:ListEmailShare">
+      <class ref="com.example.demo.ListEmailShare"/>
+    </bindings>
+    <bindings scd="~tns:ListView">
+      <class ref="com.example.demo.ListView"/>
+    </bindings>
+    <bindings scd="~tns:ListViewChart">
+      <class ref="com.example.demo.ListViewChart"/>
+    </bindings>
+    <bindings scd="~tns:ListViewChartInstance">
+      <class ref="com.example.demo.ListViewChartInstance"/>
+    </bindings>
+    <bindings scd="~tns:ListViewEvent">
+      <class ref="com.example.demo.ListViewEvent"/>
+    </bindings>
+    <bindings scd="~tns:ListViewEventStream">
+      <class ref="com.example.demo.ListViewEventStream"/>
+    </bindings>
+    <bindings scd="~tns:LiveChatSensitiveDataRule">
+      <class ref="com.example.demo.LiveChatSensitiveDataRule"/>
+    </bindings>
+    <bindings scd="~tns:LoginAsEvent">
+      <class ref="com.example.demo.LoginAsEvent"/>
+    </bindings>
+    <bindings scd="~tns:LoginAsEventStream">
+      <class ref="com.example.demo.LoginAsEventStream"/>
+    </bindings>
+    <bindings scd="~tns:LoginEvent">
+      <class ref="com.example.demo.LoginEvent"/>
+    </bindings>
+    <bindings scd="~tns:LoginEventStream">
+      <class ref="com.example.demo.LoginEventStream"/>
+    </bindings>
+    <bindings scd="~tns:LoginGeo">
+      <class ref="com.example.demo.LoginGeo"/>
+    </bindings>
+    <bindings scd="~tns:LoginHistory">
+      <class ref="com.example.demo.LoginHistory"/>
+    </bindings>
+    <bindings scd="~tns:LoginIp">
+      <class ref="com.example.demo.LoginIp"/>
+    </bindings>
+    <bindings scd="~tns:LogoutEvent">
+      <class ref="com.example.demo.LogoutEvent"/>
+    </bindings>
+    <bindings scd="~tns:LogoutEventStream">
+      <class ref="com.example.demo.LogoutEventStream"/>
+    </bindings>
+    <bindings scd="~tns:LookedUpFromActivity">
+      <class ref="com.example.demo.LookedUpFromActivity"/>
+    </bindings>
+    <bindings scd="~tns:Macro">
+      <class ref="com.example.demo.Macro"/>
+    </bindings>
+    <bindings scd="~tns:MacroHistory">
+      <class ref="com.example.demo.MacroHistory"/>
+    </bindings>
+    <bindings scd="~tns:MacroInstruction">
+      <class ref="com.example.demo.MacroInstruction"/>
+    </bindings>
+    <bindings scd="~tns:MacroShare">
+      <class ref="com.example.demo.MacroShare"/>
+    </bindings>
+    <bindings scd="~tns:MacroUsage">
+      <class ref="com.example.demo.MacroUsage"/>
+    </bindings>
+    <bindings scd="~tns:MacroUsageShare">
+      <class ref="com.example.demo.MacroUsageShare"/>
+    </bindings>
+    <bindings scd="~tns:MailmergeTemplate">
+      <class ref="com.example.demo.MailmergeTemplate"/>
+    </bindings>
+    <bindings scd="~tns:MatchingInformation">
+      <class ref="com.example.demo.MatchingInformation"/>
+    </bindings>
+    <bindings scd="~tns:MatchingRule">
+      <class ref="com.example.demo.MatchingRule"/>
+    </bindings>
+    <bindings scd="~tns:MatchingRuleItem">
+      <class ref="com.example.demo.MatchingRuleItem"/>
+    </bindings>
+    <bindings scd="~tns:MessagingChannel">
+      <class ref="com.example.demo.MessagingChannel"/>
+    </bindings>
+    <bindings scd="~tns:MessagingChannelSkill">
+      <class ref="com.example.demo.MessagingChannelSkill"/>
+    </bindings>
+    <bindings scd="~tns:MessagingConfiguration">
+      <class ref="com.example.demo.MessagingConfiguration"/>
+    </bindings>
+    <bindings scd="~tns:MessagingDeliveryError">
+      <class ref="com.example.demo.MessagingDeliveryError"/>
+    </bindings>
+    <bindings scd="~tns:MessagingEndUser">
+      <class ref="com.example.demo.MessagingEndUser"/>
+    </bindings>
+    <bindings scd="~tns:MessagingEndUserHistory">
+      <class ref="com.example.demo.MessagingEndUserHistory"/>
+    </bindings>
+    <bindings scd="~tns:MessagingEndUserShare">
+      <class ref="com.example.demo.MessagingEndUserShare"/>
+    </bindings>
+    <bindings scd="~tns:MessagingLink">
+      <class ref="com.example.demo.MessagingLink"/>
+    </bindings>
+    <bindings scd="~tns:MessagingSession">
+      <class ref="com.example.demo.MessagingSession"/>
+    </bindings>
+    <bindings scd="~tns:MessagingSessionFeed">
+      <class ref="com.example.demo.MessagingSessionFeed"/>
+    </bindings>
+    <bindings scd="~tns:MessagingSessionHistory">
+      <class ref="com.example.demo.MessagingSessionHistory"/>
+    </bindings>
+    <bindings scd="~tns:MessagingSessionShare">
+      <class ref="com.example.demo.MessagingSessionShare"/>
+    </bindings>
+    <bindings scd="~tns:MessagingTemplate">
+      <class ref="com.example.demo.MessagingTemplate"/>
+    </bindings>
+    <bindings scd="~tns:MobileApplicationDetail">
+      <class ref="com.example.demo.MobileApplicationDetail"/>
+    </bindings>
+    <bindings scd="~tns:MsgChannelLanguageKeyword">
+      <class ref="com.example.demo.MsgChannelLanguageKeyword"/>
+    </bindings>
+    <bindings scd="~tns:MutingPermissionSet">
+      <class ref="com.example.demo.MutingPermissionSet"/>
+    </bindings>
+    <bindings scd="~tns:MyDomainDiscoverableLogin">
+      <class ref="com.example.demo.MyDomainDiscoverableLogin"/>
+    </bindings>
+    <bindings scd="~tns:Name">
+      <class ref="com.example.demo.Name"/>
+    </bindings>
+    <bindings scd="~tns:NamedCredential">
+      <class ref="com.example.demo.NamedCredential"/>
+    </bindings>
+    <bindings scd="~tns:Note">
+      <class ref="com.example.demo.Note"/>
+    </bindings>
+    <bindings scd="~tns:NoteAndAttachment">
+      <class ref="com.example.demo.NoteAndAttachment"/>
+    </bindings>
+    <bindings scd="~tns:OauthCustomScope">
+      <class ref="com.example.demo.OauthCustomScope"/>
+    </bindings>
+    <bindings scd="~tns:OauthCustomScopeApp">
+      <class ref="com.example.demo.OauthCustomScopeApp"/>
+    </bindings>
+    <bindings scd="~tns:OauthToken">
+      <class ref="com.example.demo.OauthToken"/>
+    </bindings>
+    <bindings scd="~tns:ObjectPermissions">
+      <class ref="com.example.demo.ObjectPermissions"/>
+    </bindings>
+    <bindings scd="~tns:OnboardingMetrics">
+      <class ref="com.example.demo.OnboardingMetrics"/>
+    </bindings>
+    <bindings scd="~tns:OpenActivity">
+      <class ref="com.example.demo.OpenActivity"/>
+    </bindings>
+    <bindings scd="~tns:Opportunity">
+      <class ref="com.example.demo.Opportunity"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityCompetitor">
+      <class ref="com.example.demo.OpportunityCompetitor"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityContactRole">
+      <class ref="com.example.demo.OpportunityContactRole"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityFeed">
+      <class ref="com.example.demo.OpportunityFeed"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityFieldHistory">
+      <class ref="com.example.demo.OpportunityFieldHistory"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityHistory">
+      <class ref="com.example.demo.OpportunityHistory"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityLineItem">
+      <class ref="com.example.demo.OpportunityLineItem"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityPartner">
+      <class ref="com.example.demo.OpportunityPartner"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityShare">
+      <class ref="com.example.demo.OpportunityShare"/>
+    </bindings>
+    <bindings scd="~tns:OpportunityStage">
+      <class ref="com.example.demo.OpportunityStage"/>
+    </bindings>
+    <bindings scd="~tns:Order">
+      <class ref="com.example.demo.Order"/>
+    </bindings>
+    <bindings scd="~tns:OrderFeed">
+      <class ref="com.example.demo.OrderFeed"/>
+    </bindings>
+    <bindings scd="~tns:OrderHistory">
+      <class ref="com.example.demo.OrderHistory"/>
+    </bindings>
+    <bindings scd="~tns:OrderItem">
+      <class ref="com.example.demo.OrderItem"/>
+    </bindings>
+    <bindings scd="~tns:OrderItemFeed">
+      <class ref="com.example.demo.OrderItemFeed"/>
+    </bindings>
+    <bindings scd="~tns:OrderItemHistory">
+      <class ref="com.example.demo.OrderItemHistory"/>
+    </bindings>
+    <bindings scd="~tns:OrderShare">
+      <class ref="com.example.demo.OrderShare"/>
+    </bindings>
+    <bindings scd="~tns:OrderStatus">
+      <class ref="com.example.demo.OrderStatus"/>
+    </bindings>
+    <bindings scd="~tns:OrgDeleteRequest">
+      <class ref="com.example.demo.OrgDeleteRequest"/>
+    </bindings>
+    <bindings scd="~tns:OrgDeleteRequestShare">
+      <class ref="com.example.demo.OrgDeleteRequestShare"/>
+    </bindings>
+    <bindings scd="~tns:OrgLifecycleNotification">
+      <class ref="com.example.demo.OrgLifecycleNotification"/>
+    </bindings>
+    <bindings scd="~tns:OrgMetric">
+      <class ref="com.example.demo.OrgMetric"/>
+    </bindings>
+    <bindings scd="~tns:OrgMetricScanResult">
+      <class ref="com.example.demo.OrgMetricScanResult"/>
+    </bindings>
+    <bindings scd="~tns:OrgMetricScanSummary">
+      <class ref="com.example.demo.OrgMetricScanSummary"/>
+    </bindings>
+    <bindings scd="~tns:OrgWideEmailAddress">
+      <class ref="com.example.demo.OrgWideEmailAddress"/>
+    </bindings>
+    <bindings scd="~tns:Organization">
+      <class ref="com.example.demo.Organization"/>
+    </bindings>
+    <bindings scd="~tns:OutgoingEmail">
+      <class ref="com.example.demo.OutgoingEmail"/>
+    </bindings>
+    <bindings scd="~tns:OutgoingEmailRelation">
+      <class ref="com.example.demo.OutgoingEmailRelation"/>
+    </bindings>
+    <bindings scd="~tns:OwnedContentDocument">
+      <class ref="com.example.demo.OwnedContentDocument"/>
+    </bindings>
+    <bindings scd="~tns:OwnerChangeOptionInfo">
+      <class ref="com.example.demo.OwnerChangeOptionInfo"/>
+    </bindings>
+    <bindings scd="~tns:PackageLicense">
+      <class ref="com.example.demo.PackageLicense"/>
+    </bindings>
+    <bindings scd="~tns:Partner">
+      <class ref="com.example.demo.Partner"/>
+    </bindings>
+    <bindings scd="~tns:PartnerRole">
+      <class ref="com.example.demo.PartnerRole"/>
+    </bindings>
+    <bindings scd="~tns:PartyConsent">
+      <class ref="com.example.demo.PartyConsent"/>
+    </bindings>
+    <bindings scd="~tns:PartyConsentFeed">
+      <class ref="com.example.demo.PartyConsentFeed"/>
+    </bindings>
+    <bindings scd="~tns:PartyConsentHistory">
+      <class ref="com.example.demo.PartyConsentHistory"/>
+    </bindings>
+    <bindings scd="~tns:PartyConsentShare">
+      <class ref="com.example.demo.PartyConsentShare"/>
+    </bindings>
+    <bindings scd="~tns:Payment">
+      <class ref="com.example.demo.Payment"/>
+    </bindings>
+    <bindings scd="~tns:PaymentAuthAdjustment">
+      <class ref="com.example.demo.PaymentAuthAdjustment"/>
+    </bindings>
+    <bindings scd="~tns:PaymentAuthorization">
+      <class ref="com.example.demo.PaymentAuthorization"/>
+    </bindings>
+    <bindings scd="~tns:PaymentGateway">
+      <class ref="com.example.demo.PaymentGateway"/>
+    </bindings>
+    <bindings scd="~tns:PaymentGatewayLog">
+      <class ref="com.example.demo.PaymentGatewayLog"/>
+    </bindings>
+    <bindings scd="~tns:PaymentGatewayProvider">
+      <class ref="com.example.demo.PaymentGatewayProvider"/>
+    </bindings>
+    <bindings scd="~tns:PaymentGroup">
+      <class ref="com.example.demo.PaymentGroup"/>
+    </bindings>
+    <bindings scd="~tns:PaymentMethod">
+      <class ref="com.example.demo.PaymentMethod"/>
+    </bindings>
+    <bindings scd="~tns:Period">
+      <class ref="com.example.demo.Period"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSet">
+      <class ref="com.example.demo.PermissionSet"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSetAssignment">
+      <class ref="com.example.demo.PermissionSetAssignment"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSetGroup">
+      <class ref="com.example.demo.PermissionSetGroup"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSetGroupComponent">
+      <class ref="com.example.demo.PermissionSetGroupComponent"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSetLicense">
+      <class ref="com.example.demo.PermissionSetLicense"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSetLicenseAssign">
+      <class ref="com.example.demo.PermissionSetLicenseAssign"/>
+    </bindings>
+    <bindings scd="~tns:PermissionSetTabSetting">
+      <class ref="com.example.demo.PermissionSetTabSetting"/>
+    </bindings>
+    <bindings scd="~tns:PicklistValueInfo">
+      <class ref="com.example.demo.PicklistValueInfo"/>
+    </bindings>
+    <bindings scd="~tns:PlatformAction">
+      <class ref="com.example.demo.PlatformAction"/>
+    </bindings>
+    <bindings scd="~tns:PlatformCachePartition">
+      <class ref="com.example.demo.PlatformCachePartition"/>
+    </bindings>
+    <bindings scd="~tns:PlatformCachePartitionType">
+      <class ref="com.example.demo.PlatformCachePartitionType"/>
+    </bindings>
+    <bindings scd="~tns:PlatformEventUsageMetric">
+      <class ref="com.example.demo.PlatformEventUsageMetric"/>
+    </bindings>
+    <bindings scd="~tns:PlatformStatusAlertEvent">
+      <class ref="com.example.demo.PlatformStatusAlertEvent"/>
+    </bindings>
+    <bindings scd="~tns:Pricebook2">
+      <class ref="com.example.demo.Pricebook2"/>
+    </bindings>
+    <bindings scd="~tns:Pricebook2History">
+      <class ref="com.example.demo.Pricebook2History"/>
+    </bindings>
+    <bindings scd="~tns:PricebookEntry">
+      <class ref="com.example.demo.PricebookEntry"/>
+    </bindings>
+    <bindings scd="~tns:PricebookEntryHistory">
+      <class ref="com.example.demo.PricebookEntryHistory"/>
+    </bindings>
+    <bindings scd="~tns:ProcessDefinition">
+      <class ref="com.example.demo.ProcessDefinition"/>
+    </bindings>
+    <bindings scd="~tns:ProcessException">
+      <class ref="com.example.demo.ProcessException"/>
+    </bindings>
+    <bindings scd="~tns:ProcessExceptionEvent">
+      <class ref="com.example.demo.ProcessExceptionEvent"/>
+    </bindings>
+    <bindings scd="~tns:ProcessExceptionShare">
+      <class ref="com.example.demo.ProcessExceptionShare"/>
+    </bindings>
+    <bindings scd="~tns:ProcessInstance">
+      <class ref="com.example.demo.ProcessInstance"/>
+    </bindings>
+    <bindings scd="~tns:ProcessInstanceHistory">
+      <class ref="com.example.demo.ProcessInstanceHistory"/>
+    </bindings>
+    <bindings scd="~tns:ProcessInstanceNode">
+      <class ref="com.example.demo.ProcessInstanceNode"/>
+    </bindings>
+    <bindings scd="~tns:ProcessInstanceStep">
+      <class ref="com.example.demo.ProcessInstanceStep"/>
+    </bindings>
+    <bindings scd="~tns:ProcessInstanceWorkitem">
+      <class ref="com.example.demo.ProcessInstanceWorkitem"/>
+    </bindings>
+    <bindings scd="~tns:ProcessNode">
+      <class ref="com.example.demo.ProcessNode"/>
+    </bindings>
+    <bindings scd="~tns:Product2">
+      <class ref="com.example.demo.Product2"/>
+    </bindings>
+    <bindings scd="~tns:Product2Feed">
+      <class ref="com.example.demo.Product2Feed"/>
+    </bindings>
+    <bindings scd="~tns:Product2History">
+      <class ref="com.example.demo.Product2History"/>
+    </bindings>
+    <bindings scd="~tns:ProductConsumptionSchedule">
+      <class ref="com.example.demo.ProductConsumptionSchedule"/>
+    </bindings>
+    <bindings scd="~tns:Profile">
+      <class ref="com.example.demo.Profile"/>
+    </bindings>
+    <bindings scd="~tns:Prompt">
+      <class ref="com.example.demo.Prompt"/>
+    </bindings>
+    <bindings scd="~tns:PromptAction">
+      <class ref="com.example.demo.PromptAction"/>
+    </bindings>
+    <bindings scd="~tns:PromptActionShare">
+      <class ref="com.example.demo.PromptActionShare"/>
+    </bindings>
+    <bindings scd="~tns:PromptVersion">
+      <class ref="com.example.demo.PromptVersion"/>
+    </bindings>
+    <bindings scd="~tns:Publisher">
+      <class ref="com.example.demo.Publisher"/>
+    </bindings>
+    <bindings scd="~tns:PushTopic">
+      <class ref="com.example.demo.PushTopic"/>
+    </bindings>
+    <bindings scd="~tns:QueueSobject">
+      <class ref="com.example.demo.QueueSobject"/>
+    </bindings>
+    <bindings scd="~tns:QuickText">
+      <class ref="com.example.demo.QuickText"/>
+    </bindings>
+    <bindings scd="~tns:QuickTextHistory">
+      <class ref="com.example.demo.QuickTextHistory"/>
+    </bindings>
+    <bindings scd="~tns:QuickTextShare">
+      <class ref="com.example.demo.QuickTextShare"/>
+    </bindings>
+    <bindings scd="~tns:QuickTextUsage">
+      <class ref="com.example.demo.QuickTextUsage"/>
+    </bindings>
+    <bindings scd="~tns:QuickTextUsageShare">
+      <class ref="com.example.demo.QuickTextUsageShare"/>
+    </bindings>
+    <bindings scd="~tns:QuoteTemplateRichTextData">
+      <class ref="com.example.demo.QuoteTemplateRichTextData"/>
+    </bindings>
+    <bindings scd="~tns:RecentlyViewed">
+      <class ref="com.example.demo.RecentlyViewed"/>
+    </bindings>
+    <bindings scd="~tns:Recommendation">
+      <class ref="com.example.demo.Recommendation"/>
+    </bindings>
+    <bindings scd="~tns:RecordAction">
+      <class ref="com.example.demo.RecordAction"/>
+    </bindings>
+    <bindings scd="~tns:RecordActionHistory">
+      <class ref="com.example.demo.RecordActionHistory"/>
+    </bindings>
+    <bindings scd="~tns:RecordType">
+      <class ref="com.example.demo.RecordType"/>
+    </bindings>
+    <bindings scd="~tns:RedirectWhitelistUrl">
+      <class ref="com.example.demo.RedirectWhitelistUrl"/>
+    </bindings>
+    <bindings scd="~tns:Refund">
+      <class ref="com.example.demo.Refund"/>
+    </bindings>
+    <bindings scd="~tns:RefundLinePayment">
+      <class ref="com.example.demo.RefundLinePayment"/>
+    </bindings>
+    <bindings scd="~tns:RelationshipDomain">
+      <class ref="com.example.demo.RelationshipDomain"/>
+    </bindings>
+    <bindings scd="~tns:RelationshipInfo">
+      <class ref="com.example.demo.RelationshipInfo"/>
+    </bindings>
+    <bindings scd="~tns:RemoteKeyCalloutEvent">
+      <class ref="com.example.demo.RemoteKeyCalloutEvent"/>
+    </bindings>
+    <bindings scd="~tns:Report">
+      <class ref="com.example.demo.Report"/>
+    </bindings>
+    <bindings scd="~tns:ReportAnomalyEvent">
+      <class ref="com.example.demo.ReportAnomalyEvent"/>
+    </bindings>
+    <bindings scd="~tns:ReportAnomalyEventStore">
+      <class ref="com.example.demo.ReportAnomalyEventStore"/>
+    </bindings>
+    <bindings scd="~tns:ReportAnomalyEventStoreFeed">
+      <class ref="com.example.demo.ReportAnomalyEventStoreFeed"/>
+    </bindings>
+    <bindings scd="~tns:ReportEvent">
+      <class ref="com.example.demo.ReportEvent"/>
+    </bindings>
+    <bindings scd="~tns:ReportEventStream">
+      <class ref="com.example.demo.ReportEventStream"/>
+    </bindings>
+    <bindings scd="~tns:ReportFeed">
+      <class ref="com.example.demo.ReportFeed"/>
+    </bindings>
+    <bindings scd="~tns:SamlSsoConfig">
+      <class ref="com.example.demo.SamlSsoConfig"/>
+    </bindings>
+    <bindings scd="~tns:Scontrol">
+      <class ref="com.example.demo.Scontrol"/>
+    </bindings>
+    <bindings scd="~tns:SearchLayout">
+      <class ref="com.example.demo.SearchLayout"/>
+    </bindings>
+    <bindings scd="~tns:SearchPromotionRule">
+      <class ref="com.example.demo.SearchPromotionRule"/>
+    </bindings>
+    <bindings scd="~tns:SecureAgent">
+      <class ref="com.example.demo.SecureAgent"/>
+    </bindings>
+    <bindings scd="~tns:SecureAgentPlugin">
+      <class ref="com.example.demo.SecureAgentPlugin"/>
+    </bindings>
+    <bindings scd="~tns:SecureAgentPluginProperty">
+      <class ref="com.example.demo.SecureAgentPluginProperty"/>
+    </bindings>
+    <bindings scd="~tns:SecureAgentsCluster">
+      <class ref="com.example.demo.SecureAgentsCluster"/>
+    </bindings>
+    <bindings scd="~tns:SecurityCustomBaseline">
+      <class ref="com.example.demo.SecurityCustomBaseline"/>
+    </bindings>
+    <bindings scd="~tns:SessionHijackingEvent">
+      <class ref="com.example.demo.SessionHijackingEvent"/>
+    </bindings>
+    <bindings scd="~tns:SessionHijackingEventStore">
+      <class ref="com.example.demo.SessionHijackingEventStore"/>
+    </bindings>
+    <bindings scd="~tns:SessionHijackingEventStoreFeed">
+      <class ref="com.example.demo.SessionHijackingEventStoreFeed"/>
+    </bindings>
+    <bindings scd="~tns:SessionPermSetActivation">
+      <class ref="com.example.demo.SessionPermSetActivation"/>
+    </bindings>
+    <bindings scd="~tns:SetupAssistantStep">
+      <class ref="com.example.demo.SetupAssistantStep"/>
+    </bindings>
+    <bindings scd="~tns:SetupAuditTrail">
+      <class ref="com.example.demo.SetupAuditTrail"/>
+    </bindings>
+    <bindings scd="~tns:SetupEntityAccess">
+      <class ref="com.example.demo.SetupEntityAccess"/>
+    </bindings>
+    <bindings scd="~tns:Site">
+      <class ref="com.example.demo.Site"/>
+    </bindings>
+    <bindings scd="~tns:SiteDetail">
+      <class ref="com.example.demo.SiteDetail"/>
+    </bindings>
+    <bindings scd="~tns:SiteFeed">
+      <class ref="com.example.demo.SiteFeed"/>
+    </bindings>
+    <bindings scd="~tns:SiteHistory">
+      <class ref="com.example.demo.SiteHistory"/>
+    </bindings>
+    <bindings scd="~tns:SiteIframeWhiteListUrl">
+      <class ref="com.example.demo.SiteIframeWhiteListUrl"/>
+    </bindings>
+    <bindings scd="~tns:Skill">
+      <class ref="com.example.demo.Skill"/>
+    </bindings>
+    <bindings scd="~tns:Solution">
+      <class ref="com.example.demo.Solution"/>
+    </bindings>
+    <bindings scd="~tns:SolutionFeed">
+      <class ref="com.example.demo.SolutionFeed"/>
+    </bindings>
+    <bindings scd="~tns:SolutionHistory">
+      <class ref="com.example.demo.SolutionHistory"/>
+    </bindings>
+    <bindings scd="~tns:SolutionStatus">
+      <class ref="com.example.demo.SolutionStatus"/>
+    </bindings>
+    <bindings scd="~tns:Stamp">
+      <class ref="com.example.demo.Stamp"/>
+    </bindings>
+    <bindings scd="~tns:StampAssignment">
+      <class ref="com.example.demo.StampAssignment"/>
+    </bindings>
+    <bindings scd="~tns:StaticResource">
+      <class ref="com.example.demo.StaticResource"/>
+    </bindings>
+    <bindings scd="~tns:StreamingChannel">
+      <class ref="com.example.demo.StreamingChannel"/>
+    </bindings>
+    <bindings scd="~tns:StreamingChannelShare">
+      <class ref="com.example.demo.StreamingChannelShare"/>
+    </bindings>
+    <bindings scd="~tns:TabDefinition">
+      <class ref="com.example.demo.TabDefinition"/>
+    </bindings>
+    <bindings scd="~tns:Task">
+      <class ref="com.example.demo.Task"/>
+    </bindings>
+    <bindings scd="~tns:TaskFeed">
+      <class ref="com.example.demo.TaskFeed"/>
+    </bindings>
+    <bindings scd="~tns:TaskPriority">
+      <class ref="com.example.demo.TaskPriority"/>
+    </bindings>
+    <bindings scd="~tns:TaskStatus">
+      <class ref="com.example.demo.TaskStatus"/>
+    </bindings>
+    <bindings scd="~tns:TenantUsageEntitlement">
+      <class ref="com.example.demo.TenantUsageEntitlement"/>
+    </bindings>
+    <bindings scd="~tns:TestSuiteMembership">
+      <class ref="com.example.demo.TestSuiteMembership"/>
+    </bindings>
+    <bindings scd="~tns:ThirdPartyAccountLink">
+      <class ref="com.example.demo.ThirdPartyAccountLink"/>
+    </bindings>
+    <bindings scd="~tns:ThreatDetectionFeedback">
+      <class ref="com.example.demo.ThreatDetectionFeedback"/>
+    </bindings>
+    <bindings scd="~tns:ThreatDetectionFeedbackFeed">
+      <class ref="com.example.demo.ThreatDetectionFeedbackFeed"/>
+    </bindings>
+    <bindings scd="~tns:TodayGoal">
+      <class ref="com.example.demo.TodayGoal"/>
+    </bindings>
+    <bindings scd="~tns:TodayGoalShare">
+      <class ref="com.example.demo.TodayGoalShare"/>
+    </bindings>
+    <bindings scd="~tns:Topic">
+      <class ref="com.example.demo.Topic"/>
+    </bindings>
+    <bindings scd="~tns:TopicAssignment">
+      <class ref="com.example.demo.TopicAssignment"/>
+    </bindings>
+    <bindings scd="~tns:TopicFeed">
+      <class ref="com.example.demo.TopicFeed"/>
+    </bindings>
+    <bindings scd="~tns:TopicUserEvent">
+      <class ref="com.example.demo.TopicUserEvent"/>
+    </bindings>
+    <bindings scd="~tns:TransactionSecurityPolicy">
+      <class ref="com.example.demo.TransactionSecurityPolicy"/>
+    </bindings>
+    <bindings scd="~tns:Translation">
+      <class ref="com.example.demo.Translation"/>
+    </bindings>
+    <bindings scd="~tns:UiFormulaCriterion">
+      <class ref="com.example.demo.UiFormulaCriterion"/>
+    </bindings>
+    <bindings scd="~tns:UiFormulaRule">
+      <class ref="com.example.demo.UiFormulaRule"/>
+    </bindings>
+    <bindings scd="~tns:UndecidedEventRelation">
+      <class ref="com.example.demo.UndecidedEventRelation"/>
+    </bindings>
+    <bindings scd="~tns:UriEvent">
+      <class ref="com.example.demo.UriEvent"/>
+    </bindings>
+    <bindings scd="~tns:UriEventStream">
+      <class ref="com.example.demo.UriEventStream"/>
+    </bindings>
+    <bindings scd="~tns:User">
+      <class ref="com.example.demo.User"/>
+    </bindings>
+    <bindings scd="~tns:UserAppInfo">
+      <class ref="com.example.demo.UserAppInfo"/>
+    </bindings>
+    <bindings scd="~tns:UserAppMenuCustomization">
+      <class ref="com.example.demo.UserAppMenuCustomization"/>
+    </bindings>
+    <bindings scd="~tns:UserAppMenuCustomizationShare">
+      <class ref="com.example.demo.UserAppMenuCustomizationShare"/>
+    </bindings>
+    <bindings scd="~tns:UserAppMenuItem">
+      <class ref="com.example.demo.UserAppMenuItem"/>
+    </bindings>
+    <bindings scd="~tns:UserEmailPreferredPerson">
+      <class ref="com.example.demo.UserEmailPreferredPerson"/>
+    </bindings>
+    <bindings scd="~tns:UserEmailPreferredPersonShare">
+      <class ref="com.example.demo.UserEmailPreferredPersonShare"/>
+    </bindings>
+    <bindings scd="~tns:UserEntityAccess">
+      <class ref="com.example.demo.UserEntityAccess"/>
+    </bindings>
+    <bindings scd="~tns:UserFeed">
+      <class ref="com.example.demo.UserFeed"/>
+    </bindings>
+    <bindings scd="~tns:UserFieldAccess">
+      <class ref="com.example.demo.UserFieldAccess"/>
+    </bindings>
+    <bindings scd="~tns:UserLicense">
+      <class ref="com.example.demo.UserLicense"/>
+    </bindings>
+    <bindings scd="~tns:UserListView">
+      <class ref="com.example.demo.UserListView"/>
+    </bindings>
+    <bindings scd="~tns:UserListViewCriterion">
+      <class ref="com.example.demo.UserListViewCriterion"/>
+    </bindings>
+    <bindings scd="~tns:UserLogin">
+      <class ref="com.example.demo.UserLogin"/>
+    </bindings>
+    <bindings scd="~tns:UserPackageLicense">
+      <class ref="com.example.demo.UserPackageLicense"/>
+    </bindings>
+    <bindings scd="~tns:UserPermissionAccess">
+      <class ref="com.example.demo.UserPermissionAccess"/>
+    </bindings>
+    <bindings scd="~tns:UserPreference">
+      <class ref="com.example.demo.UserPreference"/>
+    </bindings>
+    <bindings scd="~tns:UserProvAccount">
+      <class ref="com.example.demo.UserProvAccount"/>
+    </bindings>
+    <bindings scd="~tns:UserProvAccountStaging">
+      <class ref="com.example.demo.UserProvAccountStaging"/>
+    </bindings>
+    <bindings scd="~tns:UserProvMockTarget">
+      <class ref="com.example.demo.UserProvMockTarget"/>
+    </bindings>
+    <bindings scd="~tns:UserProvisioningConfig">
+      <class ref="com.example.demo.UserProvisioningConfig"/>
+    </bindings>
+    <bindings scd="~tns:UserProvisioningLog">
+      <class ref="com.example.demo.UserProvisioningLog"/>
+    </bindings>
+    <bindings scd="~tns:UserProvisioningRequest">
+      <class ref="com.example.demo.UserProvisioningRequest"/>
+    </bindings>
+    <bindings scd="~tns:UserProvisioningRequestShare">
+      <class ref="com.example.demo.UserProvisioningRequestShare"/>
+    </bindings>
+    <bindings scd="~tns:UserRecordAccess">
+      <class ref="com.example.demo.UserRecordAccess"/>
+    </bindings>
+    <bindings scd="~tns:UserRole">
+      <class ref="com.example.demo.UserRole"/>
+    </bindings>
+    <bindings scd="~tns:UserSetupEntityAccess">
+      <class ref="com.example.demo.UserSetupEntityAccess"/>
+    </bindings>
+    <bindings scd="~tns:UserShare">
+      <class ref="com.example.demo.UserShare"/>
+    </bindings>
+    <bindings scd="~tns:VerificationHistory">
+      <class ref="com.example.demo.VerificationHistory"/>
+    </bindings>
+    <bindings scd="~tns:VisualforceAccessMetrics">
+      <class ref="com.example.demo.VisualforceAccessMetrics"/>
+    </bindings>
+    <bindings scd="~tns:Vote">
+      <class ref="com.example.demo.Vote"/>
+    </bindings>
+    <bindings scd="~tns:WaveAutoInstallRequest">
+      <class ref="com.example.demo.WaveAutoInstallRequest"/>
+    </bindings>
+    <bindings scd="~tns:WaveCompatibilityCheckItem">
+      <class ref="com.example.demo.WaveCompatibilityCheckItem"/>
+    </bindings>
+    <bindings scd="~tns:WebLink">
+      <class ref="com.example.demo.WebLink"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:enterprise.soap.sforce.com">
+    <schemaBindings map="false">
+      <package name="com.example.demo"/>
+    </schemaBindings>
+    <bindings scd="tns:findDuplicates">
+      <class ref="com.example.demo.FindDuplicates"/>
+    </bindings>
+    <bindings scd="tns:findDuplicatesByIds">
+      <class ref="com.example.demo.FindDuplicatesByIds"/>
+    </bindings>
+    <bindings scd="tns:findDuplicatesByIdsResponse">
+      <class ref="com.example.demo.FindDuplicatesByIdsResponse"/>
+    </bindings>
+    <bindings scd="~tns:FindDuplicatesResult">
+      <class ref="com.example.demo.FindDuplicatesResult"/>
+    </bindings>
+    <bindings scd="tns:findDuplicatesResponse">
+      <class ref="com.example.demo.FindDuplicatesResponse"/>
+    </bindings>
+    <bindings scd="tns:login">
+      <class ref="com.example.demo.Login"/>
+    </bindings>
+    <bindings scd="tns:loginResponse">
+      <class ref="com.example.demo.LoginResponse"/>
+    </bindings>
+    <bindings scd="~tns:LoginResult">
+      <class ref="com.example.demo.LoginResult"/>
+    </bindings>
+    <bindings scd="tns:describeSObject">
+      <class ref="com.example.demo.DescribeSObject"/>
+    </bindings>
+    <bindings scd="tns:describeSObjectResponse">
+      <class ref="com.example.demo.DescribeSObjectResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSObjectResult">
+      <class ref="com.example.demo.DescribeSObjectResult"/>
+    </bindings>
+    <bindings scd="tns:describeSObjects">
+      <class ref="com.example.demo.DescribeSObjects"/>
+    </bindings>
+    <bindings scd="tns:describeSObjectsResponse">
+      <class ref="com.example.demo.DescribeSObjectsResponse"/>
+    </bindings>
+    <bindings scd="tns:describeGlobal">
+      <class ref="com.example.demo.DescribeGlobal"/>
+    </bindings>
+    <bindings scd="tns:describeGlobalResponse">
+      <class ref="com.example.demo.DescribeGlobalResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeGlobalResult">
+      <class ref="com.example.demo.DescribeGlobalResult"/>
+    </bindings>
+    <bindings scd="tns:describeGlobalTheme">
+      <class ref="com.example.demo.DescribeGlobalTheme"/>
+    </bindings>
+    <bindings scd="tns:describeGlobalThemeResponse">
+      <class ref="com.example.demo.DescribeGlobalThemeResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeGlobalTheme">
+      <class ref="com.example.demo.$$$garbage$$$0"/>
+    </bindings>
+    <bindings scd="tns:describeTheme">
+      <class ref="com.example.demo.DescribeTheme"/>
+    </bindings>
+    <bindings scd="tns:describeThemeResponse">
+      <class ref="com.example.demo.DescribeThemeResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeThemeResult">
+      <class ref="com.example.demo.DescribeThemeResult"/>
+    </bindings>
+    <bindings scd="tns:describeDataCategoryGroups">
+      <class ref="com.example.demo.DescribeDataCategoryGroups"/>
+    </bindings>
+    <bindings scd="tns:describeDataCategoryGroupsResponse">
+      <class ref="com.example.demo.DescribeDataCategoryGroupsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeDataCategoryGroupResult">
+      <class ref="com.example.demo.DescribeDataCategoryGroupResult"/>
+    </bindings>
+    <bindings scd="tns:describeDataCategoryGroupStructures">
+      <class ref="com.example.demo.DescribeDataCategoryGroupStructures"/>
+    </bindings>
+    <bindings scd="~tns:DataCategoryGroupSobjectTypePair">
+      <class ref="com.example.demo.DataCategoryGroupSobjectTypePair"/>
+    </bindings>
+    <bindings scd="tns:describeDataCategoryGroupStructuresResponse">
+      <class ref="com.example.demo.DescribeDataCategoryGroupStructuresResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeDataCategoryGroupStructureResult">
+      <class ref="com.example.demo.DescribeDataCategoryGroupStructureResult"/>
+    </bindings>
+    <bindings scd="tns:describeDataCategoryMappings">
+      <class ref="com.example.demo.DescribeDataCategoryMappings"/>
+    </bindings>
+    <bindings scd="tns:describeDataCategoryMappingsResponse">
+      <class ref="com.example.demo.DescribeDataCategoryMappingsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeDataCategoryMappingResult">
+      <class ref="com.example.demo.DescribeDataCategoryMappingResult"/>
+    </bindings>
+    <bindings scd="tns:describeKnowledgeSettings">
+      <class ref="com.example.demo.DescribeKnowledgeSettings"/>
+    </bindings>
+    <bindings scd="tns:describeKnowledgeSettingsResponse">
+      <class ref="com.example.demo.DescribeKnowledgeSettingsResponse"/>
+    </bindings>
+    <bindings scd="~tns:KnowledgeSettings">
+      <class ref="com.example.demo.KnowledgeSettings"/>
+    </bindings>
+    <bindings scd="tns:describeAppMenu">
+      <class ref="com.example.demo.DescribeAppMenu"/>
+    </bindings>
+    <bindings scd="tns:describeAppMenuResponse">
+      <class ref="com.example.demo.DescribeAppMenuResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeAppMenuResult">
+      <class ref="com.example.demo.DescribeAppMenuResult"/>
+    </bindings>
+    <bindings scd="tns:describeLayout">
+      <class ref="com.example.demo.DescribeLayout"/>
+    </bindings>
+    <bindings scd="tns:describeLayoutResponse">
+      <class ref="com.example.demo.DescribeLayoutResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutResult">
+      <class ref="com.example.demo.DescribeLayoutResult"/>
+    </bindings>
+    <bindings scd="tns:describeCompactLayouts">
+      <class ref="com.example.demo.DescribeCompactLayouts"/>
+    </bindings>
+    <bindings scd="tns:describeCompactLayoutsResponse">
+      <class ref="com.example.demo.DescribeCompactLayoutsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeCompactLayoutsResult">
+      <class ref="com.example.demo.DescribeCompactLayoutsResult"/>
+    </bindings>
+    <bindings scd="tns:describePrimaryCompactLayouts">
+      <class ref="com.example.demo.DescribePrimaryCompactLayouts"/>
+    </bindings>
+    <bindings scd="tns:describePrimaryCompactLayoutsResponse">
+      <class ref="com.example.demo.DescribePrimaryCompactLayoutsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeCompactLayout">
+      <class ref="com.example.demo.DescribeCompactLayout"/>
+    </bindings>
+    <bindings scd="tns:describePathAssistants">
+      <class ref="com.example.demo.DescribePathAssistants"/>
+    </bindings>
+    <bindings scd="tns:describePathAssistantsResponse">
+      <class ref="com.example.demo.DescribePathAssistantsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribePathAssistantsResult">
+      <class ref="com.example.demo.DescribePathAssistantsResult"/>
+    </bindings>
+    <bindings scd="tns:describeApprovalLayout">
+      <class ref="com.example.demo.DescribeApprovalLayout"/>
+    </bindings>
+    <bindings scd="tns:describeApprovalLayoutResponse">
+      <class ref="com.example.demo.DescribeApprovalLayoutResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeApprovalLayoutResult">
+      <class ref="com.example.demo.DescribeApprovalLayoutResult"/>
+    </bindings>
+    <bindings scd="tns:describeSoftphoneLayout">
+      <class ref="com.example.demo.DescribeSoftphoneLayout"/>
+    </bindings>
+    <bindings scd="tns:describeSoftphoneLayoutResponse">
+      <class ref="com.example.demo.DescribeSoftphoneLayoutResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoftphoneLayoutResult">
+      <class ref="com.example.demo.DescribeSoftphoneLayoutResult"/>
+    </bindings>
+    <bindings scd="tns:describeSoqlListViews">
+      <class ref="com.example.demo.DescribeSoqlListViews"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoqlListViewsRequest">
+      <class ref="com.example.demo.DescribeSoqlListViewsRequest"/>
+    </bindings>
+    <bindings scd="tns:describeSoqlListViewsResponse">
+      <class ref="com.example.demo.DescribeSoqlListViewsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoqlListViewResult">
+      <class ref="com.example.demo.DescribeSoqlListViewResult"/>
+    </bindings>
+    <bindings scd="tns:executeListView">
+      <class ref="com.example.demo.ExecuteListView"/>
+    </bindings>
+    <bindings scd="~tns:ExecuteListViewRequest">
+      <class ref="com.example.demo.ExecuteListViewRequest"/>
+    </bindings>
+    <bindings scd="tns:executeListViewResponse">
+      <class ref="com.example.demo.ExecuteListViewResponse"/>
+    </bindings>
+    <bindings scd="~tns:ExecuteListViewResult">
+      <class ref="com.example.demo.ExecuteListViewResult"/>
+    </bindings>
+    <bindings scd="tns:describeSObjectListViews">
+      <class ref="com.example.demo.DescribeSObjectListViews"/>
+    </bindings>
+    <bindings scd="tns:describeSObjectListViewsResponse">
+      <class ref="com.example.demo.DescribeSObjectListViewsResponse"/>
+    </bindings>
+    <bindings scd="tns:describeSearchLayouts">
+      <class ref="com.example.demo.DescribeSearchLayouts"/>
+    </bindings>
+    <bindings scd="tns:describeSearchLayoutsResponse">
+      <class ref="com.example.demo.DescribeSearchLayoutsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSearchLayoutResult">
+      <class ref="com.example.demo.DescribeSearchLayoutResult"/>
+    </bindings>
+    <bindings scd="tns:describeSearchScopeOrder">
+      <class ref="com.example.demo.DescribeSearchScopeOrder"/>
+    </bindings>
+    <bindings scd="tns:describeSearchScopeOrderResponse">
+      <class ref="com.example.demo.DescribeSearchScopeOrderResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSearchScopeOrderResult">
+      <class ref="com.example.demo.DescribeSearchScopeOrderResult"/>
+    </bindings>
+    <bindings scd="tns:describeSearchableEntities">
+      <class ref="com.example.demo.DescribeSearchableEntities"/>
+    </bindings>
+    <bindings scd="tns:describeSearchableEntitiesResponse">
+      <class ref="com.example.demo.DescribeSearchableEntitiesResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSearchableEntityResult">
+      <class ref="com.example.demo.DescribeSearchableEntityResult"/>
+    </bindings>
+    <bindings scd="tns:describeTabs">
+      <class ref="com.example.demo.DescribeTabs"/>
+    </bindings>
+    <bindings scd="tns:describeTabsResponse">
+      <class ref="com.example.demo.DescribeTabsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeTabSetResult">
+      <class ref="com.example.demo.DescribeTabSetResult"/>
+    </bindings>
+    <bindings scd="tns:describeAllTabs">
+      <class ref="com.example.demo.DescribeAllTabs"/>
+    </bindings>
+    <bindings scd="tns:describeAllTabsResponse">
+      <class ref="com.example.demo.DescribeAllTabsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeTab">
+      <class ref="com.example.demo.DescribeTab"/>
+    </bindings>
+    <bindings scd="tns:describeNouns">
+      <class ref="com.example.demo.DescribeNouns"/>
+    </bindings>
+    <bindings scd="tns:describeNounsResponse">
+      <class ref="com.example.demo.DescribeNounsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeNounResult">
+      <class ref="com.example.demo.DescribeNounResult"/>
+    </bindings>
+    <bindings scd="tns:create">
+      <class ref="com.example.demo.Create"/>
+    </bindings>
+    <bindings scd="tns:createResponse">
+      <class ref="com.example.demo.CreateResponse"/>
+    </bindings>
+    <bindings scd="~tns:SaveResult">
+      <class ref="com.example.demo.SaveResult"/>
+    </bindings>
+    <bindings scd="tns:sendEmail">
+      <class ref="com.example.demo.SendEmail"/>
+    </bindings>
+    <bindings scd="~tns:Email">
+      <class ref="com.example.demo.Email"/>
+    </bindings>
+    <bindings scd="tns:sendEmailResponse">
+      <class ref="com.example.demo.SendEmailResponse"/>
+    </bindings>
+    <bindings scd="~tns:SendEmailResult">
+      <class ref="com.example.demo.SendEmailResult"/>
+    </bindings>
+    <bindings scd="tns:renderEmailTemplate">
+      <class ref="com.example.demo.RenderEmailTemplate"/>
+    </bindings>
+    <bindings scd="~tns:RenderEmailTemplateRequest">
+      <class ref="com.example.demo.RenderEmailTemplateRequest"/>
+    </bindings>
+    <bindings scd="tns:renderEmailTemplateResponse">
+      <class ref="com.example.demo.RenderEmailTemplateResponse"/>
+    </bindings>
+    <bindings scd="~tns:RenderEmailTemplateResult">
+      <class ref="com.example.demo.RenderEmailTemplateResult"/>
+    </bindings>
+    <bindings scd="tns:renderStoredEmailTemplate">
+      <class ref="com.example.demo.RenderStoredEmailTemplate"/>
+    </bindings>
+    <bindings scd="~tns:RenderStoredEmailTemplateRequest">
+      <class ref="com.example.demo.RenderStoredEmailTemplateRequest"/>
+    </bindings>
+    <bindings scd="tns:renderStoredEmailTemplateResponse">
+      <class ref="com.example.demo.RenderStoredEmailTemplateResponse"/>
+    </bindings>
+    <bindings scd="~tns:RenderStoredEmailTemplateResult">
+      <class ref="com.example.demo.RenderStoredEmailTemplateResult"/>
+    </bindings>
+    <bindings scd="tns:sendEmailMessage">
+      <class ref="com.example.demo.SendEmailMessage"/>
+    </bindings>
+    <bindings scd="tns:sendEmailMessageResponse">
+      <class ref="com.example.demo.SendEmailMessageResponse"/>
+    </bindings>
+    <bindings scd="tns:update">
+      <class ref="com.example.demo.Update"/>
+    </bindings>
+    <bindings scd="tns:updateResponse">
+      <class ref="com.example.demo.UpdateResponse"/>
+    </bindings>
+    <bindings scd="tns:upsert">
+      <class ref="com.example.demo.Upsert"/>
+    </bindings>
+    <bindings scd="tns:upsertResponse">
+      <class ref="com.example.demo.UpsertResponse"/>
+    </bindings>
+    <bindings scd="~tns:UpsertResult">
+      <class ref="com.example.demo.UpsertResult"/>
+    </bindings>
+    <bindings scd="tns:merge">
+      <class ref="com.example.demo.Merge"/>
+    </bindings>
+    <bindings scd="~tns:MergeRequest">
+      <class ref="com.example.demo.MergeRequest"/>
+    </bindings>
+    <bindings scd="tns:mergeResponse">
+      <class ref="com.example.demo.MergeResponse"/>
+    </bindings>
+    <bindings scd="~tns:MergeResult">
+      <class ref="com.example.demo.MergeResult"/>
+    </bindings>
+    <bindings scd="tns:delete">
+      <class ref="com.example.demo.Delete"/>
+    </bindings>
+    <bindings scd="tns:deleteResponse">
+      <class ref="com.example.demo.DeleteResponse"/>
+    </bindings>
+    <bindings scd="~tns:DeleteResult">
+      <class ref="com.example.demo.DeleteResult"/>
+    </bindings>
+    <bindings scd="tns:deleteByExample">
+      <class ref="com.example.demo.DeleteByExample"/>
+    </bindings>
+    <bindings scd="tns:deleteByExampleResponse">
+      <class ref="com.example.demo.DeleteByExampleResponse"/>
+    </bindings>
+    <bindings scd="~tns:DeleteByExampleResult">
+      <class ref="com.example.demo.DeleteByExampleResult"/>
+    </bindings>
+    <bindings scd="tns:undelete">
+      <class ref="com.example.demo.Undelete"/>
+    </bindings>
+    <bindings scd="tns:undeleteResponse">
+      <class ref="com.example.demo.UndeleteResponse"/>
+    </bindings>
+    <bindings scd="~tns:UndeleteResult">
+      <class ref="com.example.demo.UndeleteResult"/>
+    </bindings>
+    <bindings scd="tns:emptyRecycleBin">
+      <class ref="com.example.demo.EmptyRecycleBin"/>
+    </bindings>
+    <bindings scd="tns:emptyRecycleBinResponse">
+      <class ref="com.example.demo.EmptyRecycleBinResponse"/>
+    </bindings>
+    <bindings scd="~tns:EmptyRecycleBinResult">
+      <class ref="com.example.demo.EmptyRecycleBinResult"/>
+    </bindings>
+    <bindings scd="tns:process">
+      <class ref="com.example.demo.Process"/>
+    </bindings>
+    <bindings scd="~tns:ProcessRequest">
+      <class ref="com.example.demo.ProcessRequest"/>
+    </bindings>
+    <bindings scd="tns:processResponse">
+      <class ref="com.example.demo.ProcessResponse"/>
+    </bindings>
+    <bindings scd="~tns:ProcessResult">
+      <class ref="com.example.demo.ProcessResult"/>
+    </bindings>
+    <bindings scd="tns:performQuickActions">
+      <class ref="com.example.demo.PerformQuickActions"/>
+    </bindings>
+    <bindings scd="~tns:PerformQuickActionRequest">
+      <class ref="com.example.demo.PerformQuickActionRequest"/>
+    </bindings>
+    <bindings scd="tns:performQuickActionsResponse">
+      <class ref="com.example.demo.PerformQuickActionsResponse"/>
+    </bindings>
+    <bindings scd="~tns:PerformQuickActionResult">
+      <class ref="com.example.demo.PerformQuickActionResult"/>
+    </bindings>
+    <bindings scd="tns:retrieveMassQuickActionTemplates">
+      <class ref="com.example.demo.RetrieveMassQuickActionTemplates"/>
+    </bindings>
+    <bindings scd="tns:retrieveMassQuickActionTemplatesResponse">
+      <class ref="com.example.demo.RetrieveMassQuickActionTemplatesResponse"/>
+    </bindings>
+    <bindings scd="~tns:QuickActionTemplateResult">
+      <class ref="com.example.demo.QuickActionTemplateResult"/>
+    </bindings>
+    <bindings scd="tns:retrieveQuickActionTemplates">
+      <class ref="com.example.demo.RetrieveQuickActionTemplates"/>
+    </bindings>
+    <bindings scd="tns:retrieveQuickActionTemplatesResponse">
+      <class ref="com.example.demo.RetrieveQuickActionTemplatesResponse"/>
+    </bindings>
+    <bindings scd="tns:describeQuickActions">
+      <class ref="com.example.demo.DescribeQuickActions"/>
+    </bindings>
+    <bindings scd="tns:describeQuickActionsResponse">
+      <class ref="com.example.demo.DescribeQuickActionsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeQuickActionResult">
+      <class ref="com.example.demo.DescribeQuickActionResult"/>
+    </bindings>
+    <bindings scd="tns:describeQuickActionsForRecordType">
+      <class ref="com.example.demo.DescribeQuickActionsForRecordType"/>
+    </bindings>
+    <bindings scd="tns:describeQuickActionsForRecordTypeResponse">
+      <class ref="com.example.demo.DescribeQuickActionsForRecordTypeResponse"/>
+    </bindings>
+    <bindings scd="tns:describeAvailableQuickActions">
+      <class ref="com.example.demo.DescribeAvailableQuickActions"/>
+    </bindings>
+    <bindings scd="tns:describeAvailableQuickActionsResponse">
+      <class ref="com.example.demo.DescribeAvailableQuickActionsResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeAvailableQuickActionResult">
+      <class ref="com.example.demo.DescribeAvailableQuickActionResult"/>
+    </bindings>
+    <bindings scd="tns:describeVisualForce">
+      <class ref="com.example.demo.DescribeVisualForce"/>
+    </bindings>
+    <bindings scd="tns:describeVisualForceResponse">
+      <class ref="com.example.demo.DescribeVisualForceResponse"/>
+    </bindings>
+    <bindings scd="~tns:DescribeVisualForceResult">
+      <class ref="com.example.demo.DescribeVisualForceResult"/>
+    </bindings>
+    <bindings scd="tns:retrieve">
+      <class ref="com.example.demo.Retrieve"/>
+    </bindings>
+    <bindings scd="tns:retrieveResponse">
+      <class ref="com.example.demo.RetrieveResponse"/>
+    </bindings>
+    <bindings scd="tns:convertLead">
+      <class ref="com.example.demo.ConvertLead"/>
+    </bindings>
+    <bindings scd="~tns:LeadConvert">
+      <class ref="com.example.demo.LeadConvert"/>
+    </bindings>
+    <bindings scd="tns:convertLeadResponse">
+      <class ref="com.example.demo.ConvertLeadResponse"/>
+    </bindings>
+    <bindings scd="~tns:LeadConvertResult">
+      <class ref="com.example.demo.LeadConvertResult"/>
+    </bindings>
+    <bindings scd="tns:getUpdated">
+      <class ref="com.example.demo.GetUpdated"/>
+    </bindings>
+    <bindings scd="tns:getUpdatedResponse">
+      <class ref="com.example.demo.GetUpdatedResponse"/>
+    </bindings>
+    <bindings scd="~tns:GetUpdatedResult">
+      <class ref="com.example.demo.GetUpdatedResult"/>
+    </bindings>
+    <bindings scd="tns:getDeleted">
+      <class ref="com.example.demo.GetDeleted"/>
+    </bindings>
+    <bindings scd="tns:getDeletedResponse">
+      <class ref="com.example.demo.GetDeletedResponse"/>
+    </bindings>
+    <bindings scd="~tns:GetDeletedResult">
+      <class ref="com.example.demo.GetDeletedResult"/>
+    </bindings>
+    <bindings scd="tns:logout">
+      <class ref="com.example.demo.Logout"/>
+    </bindings>
+    <bindings scd="tns:logoutResponse">
+      <class ref="com.example.demo.LogoutResponse"/>
+    </bindings>
+    <bindings scd="tns:invalidateSessions">
+      <class ref="com.example.demo.InvalidateSessions"/>
+    </bindings>
+    <bindings scd="tns:invalidateSessionsResponse">
+      <class ref="com.example.demo.InvalidateSessionsResponse"/>
+    </bindings>
+    <bindings scd="~tns:InvalidateSessionsResult">
+      <class ref="com.example.demo.InvalidateSessionsResult"/>
+    </bindings>
+    <bindings scd="tns:query">
+      <class ref="com.example.demo.Query"/>
+    </bindings>
+    <bindings scd="tns:queryResponse">
+      <class ref="com.example.demo.QueryResponse"/>
+    </bindings>
+    <bindings scd="~tns:QueryResult">
+      <class ref="com.example.demo.QueryResult"/>
+    </bindings>
+    <bindings scd="tns:queryAll">
+      <class ref="com.example.demo.QueryAll"/>
+    </bindings>
+    <bindings scd="tns:queryAllResponse">
+      <class ref="com.example.demo.QueryAllResponse"/>
+    </bindings>
+    <bindings scd="tns:queryMore">
+      <class ref="com.example.demo.QueryMore"/>
+    </bindings>
+    <bindings scd="tns:queryMoreResponse">
+      <class ref="com.example.demo.QueryMoreResponse"/>
+    </bindings>
+    <bindings scd="tns:search">
+      <class ref="com.example.demo.Search"/>
+    </bindings>
+    <bindings scd="tns:searchResponse">
+      <class ref="com.example.demo.SearchResponse"/>
+    </bindings>
+    <bindings scd="~tns:SearchResult">
+      <class ref="com.example.demo.SearchResult"/>
+    </bindings>
+    <bindings scd="tns:getServerTimestamp">
+      <class ref="com.example.demo.GetServerTimestamp"/>
+    </bindings>
+    <bindings scd="tns:getServerTimestampResponse">
+      <class ref="com.example.demo.GetServerTimestampResponse"/>
+    </bindings>
+    <bindings scd="~tns:GetServerTimestampResult">
+      <class ref="com.example.demo.GetServerTimestampResult"/>
+    </bindings>
+    <bindings scd="tns:setPassword">
+      <class ref="com.example.demo.SetPassword"/>
+    </bindings>
+    <bindings scd="tns:setPasswordResponse">
+      <class ref="com.example.demo.SetPasswordResponse"/>
+    </bindings>
+    <bindings scd="~tns:SetPasswordResult">
+      <class ref="com.example.demo.SetPasswordResult"/>
+    </bindings>
+    <bindings scd="tns:changeOwnPassword">
+      <class ref="com.example.demo.ChangeOwnPassword"/>
+    </bindings>
+    <bindings scd="tns:changeOwnPasswordResponse">
+      <class ref="com.example.demo.ChangeOwnPasswordResponse"/>
+    </bindings>
+    <bindings scd="~tns:ChangeOwnPasswordResult">
+      <class ref="com.example.demo.ChangeOwnPasswordResult"/>
+    </bindings>
+    <bindings scd="tns:resetPassword">
+      <class ref="com.example.demo.ResetPassword"/>
+    </bindings>
+    <bindings scd="tns:resetPasswordResponse">
+      <class ref="com.example.demo.ResetPasswordResponse"/>
+    </bindings>
+    <bindings scd="~tns:ResetPasswordResult">
+      <class ref="com.example.demo.ResetPasswordResult"/>
+    </bindings>
+    <bindings scd="tns:getUserInfo">
+      <class ref="com.example.demo.GetUserInfo"/>
+    </bindings>
+    <bindings scd="tns:getUserInfoResponse">
+      <class ref="com.example.demo.GetUserInfoResponse"/>
+    </bindings>
+    <bindings scd="~tns:GetUserInfoResult">
+      <class ref="com.example.demo.GetUserInfoResult"/>
+    </bindings>
+    <bindings scd="tns:SessionHeader">
+      <class ref="com.example.demo.SessionHeader"/>
+    </bindings>
+    <bindings scd="tns:LoginScopeHeader">
+      <class ref="com.example.demo.LoginScopeHeader"/>
+    </bindings>
+    <bindings scd="tns:QueryOptions">
+      <class ref="com.example.demo.QueryOptions"/>
+    </bindings>
+    <bindings scd="tns:DebuggingHeader">
+      <class ref="com.example.demo.DebuggingHeader"/>
+    </bindings>
+    <bindings scd="~tns:LogInfo">
+      <class ref="com.example.demo.LogInfo"/>
+    </bindings>
+    <bindings scd="tns:DebuggingInfo">
+      <class ref="com.example.demo.DebuggingInfo"/>
+    </bindings>
+    <bindings scd="tns:PackageVersionHeader">
+      <class ref="com.example.demo.PackageVersionHeader"/>
+    </bindings>
+    <bindings scd="~tns:PackageVersion">
+      <class ref="com.example.demo.PackageVersion"/>
+    </bindings>
+    <bindings scd="tns:AllowFieldTruncationHeader">
+      <class ref="com.example.demo.AllowFieldTruncationHeader"/>
+    </bindings>
+    <bindings scd="tns:DisableFeedTrackingHeader">
+      <class ref="com.example.demo.DisableFeedTrackingHeader"/>
+    </bindings>
+    <bindings scd="tns:StreamingEnabledHeader">
+      <class ref="com.example.demo.StreamingEnabledHeader"/>
+    </bindings>
+    <bindings scd="tns:AllOrNoneHeader">
+      <class ref="com.example.demo.AllOrNoneHeader"/>
+    </bindings>
+    <bindings scd="tns:CurrencyConversionHeader">
+      <class ref="com.example.demo.CurrencyConversionHeader"/>
+    </bindings>
+    <bindings scd="tns:DuplicateRuleHeader">
+      <class ref="com.example.demo.DuplicateRuleHeader"/>
+    </bindings>
+    <bindings scd="tns:LimitInfoHeader">
+      <class ref="com.example.demo.LimitInfoHeader"/>
+    </bindings>
+    <bindings scd="~tns:LimitInfo">
+      <class ref="com.example.demo.LimitInfo"/>
+    </bindings>
+    <bindings scd="tns:MruHeader">
+      <class ref="com.example.demo.MruHeader"/>
+    </bindings>
+    <bindings scd="tns:EmailHeader">
+      <class ref="com.example.demo.EmailHeader"/>
+    </bindings>
+    <bindings scd="tns:AssignmentRuleHeader">
+      <class ref="com.example.demo.AssignmentRuleHeader"/>
+    </bindings>
+    <bindings scd="tns:UserTerritoryDeleteHeader">
+      <class ref="com.example.demo.UserTerritoryDeleteHeader"/>
+    </bindings>
+    <bindings scd="tns:LocaleOptions">
+      <class ref="com.example.demo.LocaleOptions"/>
+    </bindings>
+    <bindings scd="tns:OwnerChangeOptions">
+      <class ref="com.example.demo.OwnerChangeOptions"/>
+    </bindings>
+    <bindings scd="~tns:OwnerChangeOption">
+      <class ref="com.example.demo.OwnerChangeOption"/>
+    </bindings>
+    <bindings scd="~tns:address">
+      <class ref="com.example.demo.Address"/>
+    </bindings>
+    <bindings scd="~tns:location">
+      <class ref="com.example.demo.Location"/>
+    </bindings>
+    <bindings scd="~tns:SearchRecord">
+      <class ref="com.example.demo.SearchRecord"/>
+    </bindings>
+    <bindings scd="~tns:SearchRecordMetadata">
+      <class ref="com.example.demo.SearchRecordMetadata"/>
+    </bindings>
+    <bindings scd="~tns:SearchSnippet">
+      <class ref="com.example.demo.SearchSnippet"/>
+    </bindings>
+    <bindings scd="~tns:SearchResultsMetadata">
+      <class ref="com.example.demo.SearchResultsMetadata"/>
+    </bindings>
+    <bindings scd="~tns:LabelsSearchMetadata">
+      <class ref="com.example.demo.LabelsSearchMetadata"/>
+    </bindings>
+    <bindings scd="~tns:EntitySearchMetadata">
+      <class ref="com.example.demo.EntitySearchMetadata"/>
+    </bindings>
+    <bindings scd="~tns:FieldLevelSearchMetadata">
+      <class ref="com.example.demo.FieldLevelSearchMetadata"/>
+    </bindings>
+    <bindings scd="~tns:EntitySpellCorrectionMetadata">
+      <class ref="com.example.demo.EntitySpellCorrectionMetadata"/>
+    </bindings>
+    <bindings scd="~tns:EntitySearchPromotionMetadata">
+      <class ref="com.example.demo.EntitySearchPromotionMetadata"/>
+    </bindings>
+    <bindings scd="~tns:EntityIntentQueryMetadata">
+      <class ref="com.example.demo.EntityIntentQueryMetadata"/>
+    </bindings>
+    <bindings scd="~tns:EntityErrorMetadata">
+      <class ref="com.example.demo.EntityErrorMetadata"/>
+    </bindings>
+    <bindings scd="~tns:RelationshipReferenceTo">
+      <class ref="com.example.demo.RelationshipReferenceTo"/>
+    </bindings>
+    <bindings scd="~tns:RecordTypesSupported">
+      <class ref="com.example.demo.RecordTypesSupported"/>
+    </bindings>
+    <bindings scd="~tns:JunctionIdListNames">
+      <class ref="com.example.demo.JunctionIdListNames"/>
+    </bindings>
+    <bindings scd="~tns:SearchLayoutButtonsDisplayed">
+      <class ref="com.example.demo.SearchLayoutButtonsDisplayed"/>
+    </bindings>
+    <bindings scd="~tns:SearchLayoutButton">
+      <class ref="com.example.demo.SearchLayoutButton"/>
+    </bindings>
+    <bindings scd="~tns:SearchLayoutFieldsDisplayed">
+      <class ref="com.example.demo.SearchLayoutFieldsDisplayed"/>
+    </bindings>
+    <bindings scd="~tns:SearchLayoutField">
+      <class ref="com.example.demo.SearchLayoutField"/>
+    </bindings>
+    <bindings scd="~tns:NameValuePair">
+      <class ref="com.example.demo.NameValuePair"/>
+    </bindings>
+    <bindings scd="~tns:NameObjectValuePair">
+      <class ref="com.example.demo.NameObjectValuePair"/>
+    </bindings>
+    <bindings scd="~tns:DeletedRecord">
+      <class ref="com.example.demo.DeletedRecord"/>
+    </bindings>
+    <bindings scd="~tns:ExtendedErrorDetails">
+      <class ref="com.example.demo.ExtendedErrorDetails"/>
+    </bindings>
+    <bindings scd="~tns:Error">
+      <class ref="com.example.demo.Error"/>
+    </bindings>
+    <bindings scd="~tns:SendEmailError">
+      <class ref="com.example.demo.SendEmailError"/>
+    </bindings>
+    <bindings scd="~tns:RenderEmailTemplateError">
+      <class ref="com.example.demo.RenderEmailTemplateError"/>
+    </bindings>
+    <bindings scd="~tns:ProcessSubmitRequest">
+      <class ref="com.example.demo.ProcessSubmitRequest"/>
+    </bindings>
+    <bindings scd="~tns:ProcessWorkitemRequest">
+      <class ref="com.example.demo.ProcessWorkitemRequest"/>
+    </bindings>
+    <bindings scd="~tns:DescribeQuickActionDefaultValue">
+      <class ref="com.example.demo.DescribeQuickActionDefaultValue"/>
+    </bindings>
+    <bindings scd="~tns:DescribeGlobalSObjectResult">
+      <class ref="com.example.demo.DescribeGlobalSObjectResult"/>
+    </bindings>
+    <bindings scd="~tns:ChildRelationship">
+      <class ref="com.example.demo.ChildRelationship"/>
+    </bindings>
+    <bindings scd="~tns:ScopeInfo">
+      <class ref="com.example.demo.ScopeInfo"/>
+    </bindings>
+    <bindings scd="~tns:StringList">
+      <class ref="com.example.demo.StringList"/>
+    </bindings>
+    <bindings scd="~tns:ChangeEventHeader">
+      <class ref="com.example.demo.ChangeEventHeader"/>
+    </bindings>
+    <bindings scd="~tns:FilteredLookupInfo">
+      <class ref="com.example.demo.FilteredLookupInfo"/>
+    </bindings>
+    <bindings scd="~tns:Field">
+      <class ref="com.example.demo.Field"/>
+    </bindings>
+    <bindings scd="~tns:PicklistEntry">
+      <class ref="com.example.demo.PicklistEntry"/>
+    </bindings>
+    <bindings scd="~tns:DataCategory">
+      <class ref="com.example.demo.DataCategory"/>
+    </bindings>
+    <bindings scd="~tns:KnowledgeLanguageItem">
+      <class ref="com.example.demo.KnowledgeLanguageItem"/>
+    </bindings>
+    <bindings scd="~tns:FieldDiff">
+      <class ref="com.example.demo.FieldDiff"/>
+    </bindings>
+    <bindings scd="~tns:AdditionalInformationMap">
+      <class ref="com.example.demo.AdditionalInformationMap"/>
+    </bindings>
+    <bindings scd="~tns:MatchRecord">
+      <class ref="com.example.demo.MatchRecord"/>
+    </bindings>
+    <bindings scd="~tns:MatchResult">
+      <class ref="com.example.demo.MatchResult"/>
+    </bindings>
+    <bindings scd="~tns:DuplicateResult">
+      <class ref="com.example.demo.DuplicateResult"/>
+    </bindings>
+    <bindings scd="~tns:DuplicateError">
+      <class ref="com.example.demo.DuplicateError"/>
+    </bindings>
+    <bindings scd="~tns:NameCaseValue">
+      <class ref="com.example.demo.NameCaseValue"/>
+    </bindings>
+    <bindings scd="~tns:DescribeAppMenuItem">
+      <class ref="com.example.demo.DescribeAppMenuItem"/>
+    </bindings>
+    <bindings scd="~tns:DescribeThemeItem">
+      <class ref="com.example.demo.DescribeThemeItem"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoftphoneLayoutCallType">
+      <class ref="com.example.demo.DescribeSoftphoneLayoutCallType"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoftphoneScreenPopOption">
+      <class ref="com.example.demo.DescribeSoftphoneScreenPopOption"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoftphoneLayoutInfoField">
+      <class ref="com.example.demo.DescribeSoftphoneLayoutInfoField"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoftphoneLayoutSection">
+      <class ref="com.example.demo.DescribeSoftphoneLayoutSection"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoftphoneLayoutItem">
+      <class ref="com.example.demo.DescribeSoftphoneLayoutItem"/>
+    </bindings>
+    <bindings scd="~tns:RecordTypeCompactLayoutMapping">
+      <class ref="com.example.demo.RecordTypeCompactLayoutMapping"/>
+    </bindings>
+    <bindings scd="~tns:DescribePathAssistant">
+      <class ref="com.example.demo.DescribePathAssistant"/>
+    </bindings>
+    <bindings scd="~tns:DescribePathAssistantStep">
+      <class ref="com.example.demo.DescribePathAssistantStep"/>
+    </bindings>
+    <bindings scd="~tns:DescribePathAssistantField">
+      <class ref="com.example.demo.DescribePathAssistantField"/>
+    </bindings>
+    <bindings scd="~tns:DescribeAnimationRule">
+      <class ref="com.example.demo.DescribeAnimationRule"/>
+    </bindings>
+    <bindings scd="~tns:DescribeApprovalLayout">
+      <class ref="com.example.demo.$$$garbage$$$1"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayout">
+      <class ref="com.example.demo.$$$garbage$$$2"/>
+    </bindings>
+    <bindings scd="~tns:DescribeQuickActionListResult">
+      <class ref="com.example.demo.DescribeQuickActionListResult"/>
+    </bindings>
+    <bindings scd="~tns:DescribeQuickActionListItemResult">
+      <class ref="com.example.demo.DescribeQuickActionListItemResult"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutFeedView">
+      <class ref="com.example.demo.DescribeLayoutFeedView"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutFeedFilter">
+      <class ref="com.example.demo.DescribeLayoutFeedFilter"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutSaveOption">
+      <class ref="com.example.demo.DescribeLayoutSaveOption"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutSection">
+      <class ref="com.example.demo.DescribeLayoutSection"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutButtonSection">
+      <class ref="com.example.demo.DescribeLayoutButtonSection"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutRow">
+      <class ref="com.example.demo.DescribeLayoutRow"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutItem">
+      <class ref="com.example.demo.DescribeLayoutItem"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutButton">
+      <class ref="com.example.demo.DescribeLayoutButton"/>
+    </bindings>
+    <bindings scd="~tns:DescribeLayoutComponent">
+      <class ref="com.example.demo.DescribeLayoutComponent"/>
+    </bindings>
+    <bindings scd="~tns:FieldComponent">
+      <class ref="com.example.demo.FieldComponent"/>
+    </bindings>
+    <bindings scd="~tns:FieldLayoutComponent">
+      <class ref="com.example.demo.FieldLayoutComponent"/>
+    </bindings>
+    <bindings scd="~tns:VisualforcePage">
+      <class ref="com.example.demo.VisualforcePage"/>
+    </bindings>
+    <bindings scd="~tns:Canvas">
+      <class ref="com.example.demo.Canvas"/>
+    </bindings>
+    <bindings scd="~tns:ReportChartComponent">
+      <class ref="com.example.demo.ReportChartComponent"/>
+    </bindings>
+    <bindings scd="~tns:AnalyticsCloudComponent">
+      <class ref="com.example.demo.AnalyticsCloudComponent"/>
+    </bindings>
+    <bindings scd="~tns:CustomLinkComponent">
+      <class ref="com.example.demo.CustomLinkComponent"/>
+    </bindings>
+    <bindings scd="~tns:NamedLayoutInfo">
+      <class ref="com.example.demo.NamedLayoutInfo"/>
+    </bindings>
+    <bindings scd="~tns:RecordTypeInfo">
+      <class ref="com.example.demo.RecordTypeInfo"/>
+    </bindings>
+    <bindings scd="~tns:RecordTypeMapping">
+      <class ref="com.example.demo.RecordTypeMapping"/>
+    </bindings>
+    <bindings scd="~tns:PicklistForRecordType">
+      <class ref="com.example.demo.PicklistForRecordType"/>
+    </bindings>
+    <bindings scd="~tns:RelatedContent">
+      <class ref="com.example.demo.RelatedContent"/>
+    </bindings>
+    <bindings scd="~tns:DescribeRelatedContentItem">
+      <class ref="com.example.demo.DescribeRelatedContentItem"/>
+    </bindings>
+    <bindings scd="~tns:RelatedList">
+      <class ref="com.example.demo.RelatedList"/>
+    </bindings>
+    <bindings scd="~tns:RelatedListColumn">
+      <class ref="com.example.demo.RelatedListColumn"/>
+    </bindings>
+    <bindings scd="~tns:RelatedListSort">
+      <class ref="com.example.demo.RelatedListSort"/>
+    </bindings>
+    <bindings scd="~tns:EmailFileAttachment">
+      <class ref="com.example.demo.EmailFileAttachment"/>
+    </bindings>
+    <bindings scd="~tns:MassEmailMessage">
+      <class ref="com.example.demo.MassEmailMessage"/>
+    </bindings>
+    <bindings scd="~tns:SingleEmailMessage">
+      <class ref="com.example.demo.SingleEmailMessage"/>
+    </bindings>
+    <bindings scd="~tns:ListViewColumn">
+      <class ref="com.example.demo.ListViewColumn"/>
+    </bindings>
+    <bindings scd="~tns:ListViewOrderBy">
+      <class ref="com.example.demo.ListViewOrderBy"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoqlListView">
+      <class ref="com.example.demo.DescribeSoqlListView"/>
+    </bindings>
+    <bindings scd="~tns:DescribeSoqlListViewParams">
+      <class ref="com.example.demo.DescribeSoqlListViewParams"/>
+    </bindings>
+    <bindings scd="~tns:ListViewRecord">
+      <class ref="com.example.demo.ListViewRecord"/>
+    </bindings>
+    <bindings scd="~tns:ListViewRecordColumn">
+      <class ref="com.example.demo.ListViewRecordColumn"/>
+    </bindings>
+    <bindings scd="~tns:SoqlWhereCondition">
+      <class ref="com.example.demo.SoqlWhereCondition"/>
+    </bindings>
+    <bindings scd="~tns:SoqlCondition">
+      <class ref="com.example.demo.SoqlCondition"/>
+    </bindings>
+    <bindings scd="~tns:SoqlNotCondition">
+      <class ref="com.example.demo.SoqlNotCondition"/>
+    </bindings>
+    <bindings scd="~tns:SoqlConditionGroup">
+      <class ref="com.example.demo.SoqlConditionGroup"/>
+    </bindings>
+    <bindings scd="~tns:SoqlSubQueryCondition">
+      <class ref="com.example.demo.SoqlSubQueryCondition"/>
+    </bindings>
+    <bindings scd="~tns:DescribeColumn">
+      <class ref="com.example.demo.DescribeColumn"/>
+    </bindings>
+    <bindings scd="~tns:DescribeColor">
+      <class ref="com.example.demo.DescribeColor"/>
+    </bindings>
+    <bindings scd="~tns:DescribeIcon">
+      <class ref="com.example.demo.DescribeIcon"/>
+    </bindings>
+    <bindings scd="~tns:ActionOverride">
+      <class ref="com.example.demo.ActionOverride"/>
+    </bindings>
+    <bindings scd="~tns:RenderEmailTemplateBodyResult">
+      <class ref="com.example.demo.RenderEmailTemplateBodyResult"/>
+    </bindings>
+    <bindings scd="~tns:AppMenuType">
+      <typesafeEnumClass ref="com.example.demo.AppMenuType"/>
+    </bindings>
+    <bindings scd="~tns:listViewIsSoqlCompatible">
+      <typesafeEnumClass ref="com.example.demo.ListViewIsSoqlCompatible"/>
+    </bindings>
+    <bindings scd="~tns:DebugLevel">
+      <typesafeEnumClass ref="com.example.demo.DebugLevel"/>
+    </bindings>
+    <bindings scd="~tns:ShareAccessLevel">
+      <typesafeEnumClass ref="com.example.demo.ShareAccessLevel"/>
+    </bindings>
+    <bindings scd="~tns:changeEventType">
+      <typesafeEnumClass ref="com.example.demo.ChangeEventType"/>
+    </bindings>
+    <bindings scd="~tns:fieldType">
+      <typesafeEnumClass ref="com.example.demo.FieldType"/>
+    </bindings>
+    <bindings scd="~tns:soapType">
+      <typesafeEnumClass ref="com.example.demo.SoapType"/>
+    </bindings>
+    <bindings scd="~tns:differenceType">
+      <typesafeEnumClass ref="com.example.demo.DifferenceType"/>
+    </bindings>
+    <bindings scd="~tns:Article">
+      <typesafeEnumClass ref="com.example.demo.Article"/>
+    </bindings>
+    <bindings scd="~tns:CaseType">
+      <typesafeEnumClass ref="com.example.demo.CaseType"/>
+    </bindings>
+    <bindings scd="~tns:Gender">
+      <typesafeEnumClass ref="com.example.demo.Gender"/>
+    </bindings>
+    <bindings scd="~tns:GrammaticalNumber">
+      <typesafeEnumClass ref="com.example.demo.GrammaticalNumber"/>
+    </bindings>
+    <bindings scd="~tns:Possessive">
+      <typesafeEnumClass ref="com.example.demo.Possessive"/>
+    </bindings>
+    <bindings scd="~tns:StartsWith">
+      <typesafeEnumClass ref="com.example.demo.StartsWith"/>
+    </bindings>
+    <bindings scd="~tns:FeedLayoutFilterType">
+      <typesafeEnumClass ref="com.example.demo.FeedLayoutFilterType"/>
+    </bindings>
+    <bindings scd="~tns:TabOrderType">
+      <typesafeEnumClass ref="com.example.demo.TabOrderType"/>
+    </bindings>
+    <bindings scd="~tns:WebLinkWindowType">
+      <typesafeEnumClass ref="com.example.demo.WebLinkWindowType"/>
+    </bindings>
+    <bindings scd="~tns:WebLinkPosition">
+      <typesafeEnumClass ref="com.example.demo.WebLinkPosition"/>
+    </bindings>
+    <bindings scd="~tns:WebLinkType">
+      <typesafeEnumClass ref="com.example.demo.WebLinkType"/>
+    </bindings>
+    <bindings scd="~tns:layoutComponentType">
+      <typesafeEnumClass ref="com.example.demo.LayoutComponentType"/>
+    </bindings>
+    <bindings scd="~tns:ReportChartSize">
+      <typesafeEnumClass ref="com.example.demo.ReportChartSize"/>
+    </bindings>
+    <bindings scd="~tns:EmailPriority">
+      <typesafeEnumClass ref="com.example.demo.EmailPriority"/>
+    </bindings>
+    <bindings scd="~tns:SendEmailOptOutPolicy">
+      <typesafeEnumClass ref="com.example.demo.SendEmailOptOutPolicy"/>
+    </bindings>
+    <bindings scd="~tns:AttachmentRetrievalOption">
+      <typesafeEnumClass ref="com.example.demo.AttachmentRetrievalOption"/>
+    </bindings>
+    <bindings scd="~tns:orderByDirection">
+      <typesafeEnumClass ref="com.example.demo.OrderByDirection"/>
+    </bindings>
+    <bindings scd="~tns:orderByNullsPosition">
+      <typesafeEnumClass ref="com.example.demo.OrderByNullsPosition"/>
+    </bindings>
+    <bindings scd="~tns:soqlOperator">
+      <typesafeEnumClass ref="com.example.demo.SoqlOperator"/>
+    </bindings>
+    <bindings scd="~tns:soqlConjunction">
+      <typesafeEnumClass ref="com.example.demo.SoqlConjunction"/>
+    </bindings>
+    <bindings scd="~tns:LogCategory">
+      <typesafeEnumClass ref="com.example.demo.LogCategory"/>
+    </bindings>
+    <bindings scd="~tns:LogCategoryLevel">
+      <typesafeEnumClass ref="com.example.demo.LogCategoryLevel"/>
+    </bindings>
+    <bindings scd="~tns:OwnerChangeOptionType">
+      <typesafeEnumClass ref="com.example.demo.OwnerChangeOptionType"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="urn:fault.enterprise.soap.sforce.com">
+    <schemaBindings map="false">
+      <package name="com.example.demo"/>
+    </schemaBindings>
+    <bindings scd="~tns:ApiFault">
+      <class ref="com.example.demo.ApiFault"/>
+    </bindings>
+    <bindings scd="~tns:LoginFault">
+      <class ref="com.example.demo.LoginFault"/>
+    </bindings>
+    <bindings scd="~tns:InvalidQueryLocatorFault">
+      <class ref="com.example.demo.InvalidQueryLocatorFault"/>
+    </bindings>
+    <bindings scd="~tns:InvalidNewPasswordFault">
+      <class ref="com.example.demo.InvalidNewPasswordFault"/>
+    </bindings>
+    <bindings scd="~tns:InvalidOldPasswordFault">
+      <class ref="com.example.demo.InvalidOldPasswordFault"/>
+    </bindings>
+    <bindings scd="~tns:InvalidIdFault">
+      <class ref="com.example.demo.InvalidIdFault"/>
+    </bindings>
+    <bindings scd="~tns:UnexpectedErrorFault">
+      <class ref="com.example.demo.UnexpectedErrorFault"/>
+    </bindings>
+    <bindings scd="~tns:InvalidFieldFault">
+      <class ref="com.example.demo.InvalidFieldFault"/>
+    </bindings>
+    <bindings scd="~tns:InvalidSObjectFault">
+      <class ref="com.example.demo.InvalidSObjectFault"/>
+    </bindings>
+    <bindings scd="~tns:MalformedQueryFault">
+      <class ref="com.example.demo.MalformedQueryFault"/>
+    </bindings>
+    <bindings scd="~tns:MalformedSearchFault">
+      <class ref="com.example.demo.MalformedSearchFault"/>
+    </bindings>
+    <bindings scd="~tns:ApiQueryFault">
+      <class ref="com.example.demo.ApiQueryFault"/>
+    </bindings>
+    <bindings scd="~tns:ExceptionCode">
+      <typesafeEnumClass ref="com.example.demo.ExceptionCode"/>
+    </bindings>
+  </bindings>
+</bindings>
+
