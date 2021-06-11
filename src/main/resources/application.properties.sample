@@ -1,0 +1,5 @@
+#  Fill in your data and remove .sample extension
+authEndPoint=https://login.salesforce.com/services/Soap/c/51.0
+authName=
+password=
+token=
