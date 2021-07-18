@@ -98,7 +98,7 @@
          <artifactId>enterprise</artifactId>
          <scope>system</scope>
          <version>1.0</version>
-         <systemPath>${basedir}\src\main\resources\enterprise.jar</systemPath>
+         <systemPath>${basedir}/src/main/resources/enterprise.jar</systemPath>
       </dependency>
         
 	</dependencies>
