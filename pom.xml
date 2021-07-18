@@ -16,6 +16,8 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<openapi-generator-maven-plugin.version>5.1.0</openapi-generator-maven-plugin.version>
+		<docker.image.name>thimotyb/salesforce-service</docker.image.name>
+    	<docker.image.tag>latest</docker.image.tag>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -89,6 +91,15 @@
     <artifactId>validation-api</artifactId>
     <version>2.0.1.Final</version>
 </dependency>
+
+	<!-- local dependency to enterprise.jar -->
+	<dependency>
+         <groupId>com.salesforce</groupId>
+         <artifactId>enterprise</artifactId>
+         <scope>system</scope>
+         <version>1.0</version>
+         <systemPath>${basedir}\src\main\resources\enterprise.jar</systemPath>
+      </dependency>
         
 	</dependencies>
 
@@ -98,27 +109,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin> 
-			    <groupId>org.jvnet.jaxb2.maven2</groupId>
-			    <artifactId>maven-jaxb2-plugin</artifactId>
-			    <version>0.14.0</version>
-			    <executions>
-			         <execution>
-			              <goals>
-			                  <goal>generate</goal>
-			              </goals>
-			         </execution>
-			    </executions>
-			    <configuration>
-			          <schemaLanguage>WSDL</schemaLanguage>
-			          <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
-			          <generatePackage>com.example.demo</generatePackage>
-			          <schemaDirectory>${project.basedir}/src/main/resources</schemaDirectory>
-			          <schemaIncludes>
-			             <include>enterprise.wsdl</include>
-			          </schemaIncludes>
-			    </configuration>
-			</plugin>
+		
 			<plugin>
 				<!-- Plugin that provides API-first development using openapi-generator
 					to generate Spring-MVC endpoint stubs at compile time from an OpenAPI definition
@@ -164,6 +155,46 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- We use the Resources plugin to filer Dockerfile and run.sh, it inserts actual JAR filename -->
+         <!-- The final Dockerfile will be created in target/dockerfile/Dockerfile -->
+         <plugin>
+             <artifactId>maven-resources-plugin</artifactId>
+             <executions>
+                 <execution>
+                     <id>copy-resources</id>
+                     <!-- here the phase you need -->
+                     <phase>validate</phase>
+                     <goals>
+                         <goal>copy-resources</goal>
+                     </goals>
+                     <configuration>
+                         <outputDirectory>${basedir}/target/dockerfile</outputDirectory>
+                         <resources>
+                             <resource>
+                                 <directory>src/main/docker</directory>
+                                 <filtering>true</filtering>
+                             </resource>
+                         </resources>
+                     </configuration>
+                 </execution>
+             </executions>
+         </plugin>
+         <plugin>
+             <groupId>com.spotify</groupId>
+             <artifactId>docker-maven-plugin</artifactId>
+             <version>0.4.10</version>
+             <configuration>
+                 <imageName>${docker.image.name}:${docker.image.tag}</imageName>
+                 <dockerDirectory>${basedir}/target/dockerfile</dockerDirectory>
+                 <resources>
+                     <resource>
+                         <targetPath>/</targetPath>
+                         <directory>${project.build.directory}</directory>
+                         <include>${project.build.finalName}.jar</include>
+                     </resource>
+                 </resources>
+             </configuration>
+         </plugin>
 		</plugins>
 	</build>
 
