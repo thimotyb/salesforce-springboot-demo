@@ -16,7 +16,6 @@ import com.sforce.soap.enterprise.EnterpriseConnection;
 import com.sforce.soap.enterprise.GetUserInfoResult;
 import com.sforce.soap.enterprise.QueryResult;
 import com.sforce.soap.enterprise.sobject.Account;
-import com.sforce.soap.enterprise.sobject.Contact;
 import com.sforce.soap.enterprise.sobject.SObject;
 import com.sforce.ws.ConnectionException;
 import com.sforce.ws.ConnectorConfig;
@@ -26,9 +25,6 @@ public class AccountController {
 
 	@Autowired
 	Config propertiesConfig;
-	
-	private static final String template = "Hello, %s!";
-	private final AtomicLong counter = new AtomicLong();
 	
    EnterpriseConnection connection;
    String authEndPoint = "https://login.salesforce.com/services/Soap/c/51.0";
