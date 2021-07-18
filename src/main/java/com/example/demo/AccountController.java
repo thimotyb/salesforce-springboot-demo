@@ -22,7 +22,7 @@ import com.sforce.ws.ConnectionException;
 import com.sforce.ws.ConnectorConfig;
 
 @RestController
-public class GreetingController {
+public class AccountController {
 
 	@Autowired
 	Config propertiesConfig;
