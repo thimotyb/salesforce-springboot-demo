@@ -31,7 +31,7 @@ public class SalesforceConnectionService {
 		authEndPoint = propertiesConfig.getAuthEndPoint();
 		authPassword = propertiesConfig.getPassword() + propertiesConfig.getToken();
 		System.out.println("***" + propertiesConfig.getAuthName());
-		System.out.println("***" + authPassword);
+		//System.out.println("***" + authPassword);
 
 		login();
 
